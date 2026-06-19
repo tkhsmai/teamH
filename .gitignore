@@ -134,3 +134,6 @@ _NCrunch*
 # Visual Studio
 .vs/
 *.vsidx
+TeamH/TeamH/favoriteranking.cs
+TeamH/TeamH/favoriteranking.Designer.cs
+TeamH/TeamH/favoriteranking.resx
