@@ -37,6 +37,9 @@ namespace teamH
 
         }
 
-       
+        private void Storepicture1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
