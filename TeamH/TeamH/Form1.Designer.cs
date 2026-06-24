@@ -37,18 +37,19 @@
             this.MenuTbx = new System.Windows.Forms.TextBox();
             this.SearchBtn = new System.Windows.Forms.Button();
             this.FavoriteBtn = new System.Windows.Forms.Button();
-            this.Storelbl1 = new System.Windows.Forms.Label();
-            this.Storelbl2 = new System.Windows.Forms.Label();
-            this.Storelbl3 = new System.Windows.Forms.Label();
-            this.Storepicture1 = new System.Windows.Forms.PictureBox();
-            this.Storepicture2 = new System.Windows.Forms.PictureBox();
-            this.Storepicture3 = new System.Windows.Forms.PictureBox();
+            this.StoreLbl1 = new System.Windows.Forms.Label();
+            this.StoreLbl2 = new System.Windows.Forms.Label();
+            this.StoreLbl3 = new System.Windows.Forms.Label();
+            this.StorePicture1 = new System.Windows.Forms.PictureBox();
+            this.StorePicture2 = new System.Windows.Forms.PictureBox();
+            this.StorePicture3 = new System.Windows.Forms.PictureBox();
             this.MenuDgv1 = new System.Windows.Forms.DataGridView();
             this.MenuDgv2 = new System.Windows.Forms.DataGridView();
             this.MenuDgv3 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.Storepicture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Storepicture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Storepicture3)).BeginInit();
+            this.FavoriteCntBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv3)).BeginInit();
@@ -59,11 +60,10 @@
             this.HomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.HomeBtn.Location = new System.Drawing.Point(72, 28);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(101, 54);
+            this.HomeBtn.Size = new System.Drawing.Size(124, 54);
             this.HomeBtn.TabIndex = 0;
             this.HomeBtn.Text = "Home";
             this.HomeBtn.UseVisualStyleBackColor = true;
-            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // WeekLbl
             // 
@@ -148,67 +148,66 @@
             this.FavoriteBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FavoriteBtn.Location = new System.Drawing.Point(72, 354);
             this.FavoriteBtn.Name = "FavoriteBtn";
-            this.FavoriteBtn.Size = new System.Drawing.Size(307, 55);
+            this.FavoriteBtn.Size = new System.Drawing.Size(345, 55);
             this.FavoriteBtn.TabIndex = 10;
             this.FavoriteBtn.Text = "お気に入り・ランキング";
             this.FavoriteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FavoriteBtn.UseVisualStyleBackColor = true;
             this.FavoriteBtn.Click += new System.EventHandler(this.FavoriteBtn_Click);
             // 
-            // Storelbl1
+            // StoreLbl1
             // 
-            this.Storelbl1.AutoSize = true;
-            this.Storelbl1.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Storelbl1.Location = new System.Drawing.Point(676, 82);
-            this.Storelbl1.Name = "Storelbl1";
-            this.Storelbl1.Size = new System.Drawing.Size(85, 34);
-            this.Storelbl1.TabIndex = 11;
-            this.Storelbl1.Text = "店名";
+            this.StoreLbl1.AutoSize = true;
+            this.StoreLbl1.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl1.Location = new System.Drawing.Point(676, 82);
+            this.StoreLbl1.Name = "StoreLbl1";
+            this.StoreLbl1.Size = new System.Drawing.Size(85, 33);
+            this.StoreLbl1.TabIndex = 11;
+            this.StoreLbl1.Text = "店名";
             // 
-            // Storelbl2
+            // StoreLbl2
             // 
-            this.Storelbl2.AutoSize = true;
-            this.Storelbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Storelbl2.Location = new System.Drawing.Point(1085, 83);
-            this.Storelbl2.Name = "Storelbl2";
-            this.Storelbl2.Size = new System.Drawing.Size(85, 34);
-            this.Storelbl2.TabIndex = 12;
-            this.Storelbl2.Text = "店名";
+            this.StoreLbl2.AutoSize = true;
+            this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl2.Location = new System.Drawing.Point(1085, 83);
+            this.StoreLbl2.Name = "StoreLbl2";
+            this.StoreLbl2.Size = new System.Drawing.Size(85, 33);
+            this.StoreLbl2.TabIndex = 12;
+            this.StoreLbl2.Text = "店名";
             // 
-            // Storelbl3
+            // StoreLbl3
             // 
-            this.Storelbl3.AutoSize = true;
-            this.Storelbl3.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Storelbl3.Location = new System.Drawing.Point(1536, 82);
-            this.Storelbl3.Name = "Storelbl3";
-            this.Storelbl3.Size = new System.Drawing.Size(85, 34);
-            this.Storelbl3.TabIndex = 13;
-            this.Storelbl3.Text = "店名";
+            this.StoreLbl3.AutoSize = true;
+            this.StoreLbl3.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl3.Location = new System.Drawing.Point(1536, 82);
+            this.StoreLbl3.Name = "StoreLbl3";
+            this.StoreLbl3.Size = new System.Drawing.Size(85, 33);
+            this.StoreLbl3.TabIndex = 13;
+            this.StoreLbl3.Text = "店名";
             // 
-            // Storepicture1
+            // StorePicture1
             // 
-            this.Storepicture1.Location = new System.Drawing.Point(557, 140);
-            this.Storepicture1.Name = "Storepicture1";
-            this.Storepicture1.Size = new System.Drawing.Size(355, 208);
-            this.Storepicture1.TabIndex = 15;
-            this.Storepicture1.TabStop = false;
-            this.Storepicture1.Click += new System.EventHandler(this.Storepicture1_Click);
+            this.StorePicture1.Location = new System.Drawing.Point(557, 140);
+            this.StorePicture1.Name = "StorePicture1";
+            this.StorePicture1.Size = new System.Drawing.Size(355, 208);
+            this.StorePicture1.TabIndex = 15;
+            this.StorePicture1.TabStop = false;
             // 
-            // Storepicture2
+            // StorePicture2
             // 
-            this.Storepicture2.Location = new System.Drawing.Point(991, 140);
-            this.Storepicture2.Name = "Storepicture2";
-            this.Storepicture2.Size = new System.Drawing.Size(350, 208);
-            this.Storepicture2.TabIndex = 16;
-            this.Storepicture2.TabStop = false;
+            this.StorePicture2.Location = new System.Drawing.Point(991, 140);
+            this.StorePicture2.Name = "StorePicture2";
+            this.StorePicture2.Size = new System.Drawing.Size(350, 208);
+            this.StorePicture2.TabIndex = 16;
+            this.StorePicture2.TabStop = false;
             // 
-            // Storepicture3
+            // StorePicture3
             // 
-            this.Storepicture3.Location = new System.Drawing.Point(1404, 140);
-            this.Storepicture3.Name = "Storepicture3";
-            this.Storepicture3.Size = new System.Drawing.Size(353, 208);
-            this.Storepicture3.TabIndex = 17;
-            this.Storepicture3.TabStop = false;
+            this.StorePicture3.Location = new System.Drawing.Point(1404, 140);
+            this.StorePicture3.Name = "StorePicture3";
+            this.StorePicture3.Size = new System.Drawing.Size(353, 208);
+            this.StorePicture3.TabIndex = 17;
+            this.StorePicture3.TabStop = false;
             // 
             // MenuDgv1
             // 
@@ -240,20 +239,31 @@
             this.MenuDgv3.Size = new System.Drawing.Size(353, 411);
             this.MenuDgv3.TabIndex = 20;
             // 
+            // FavoriteCntBtn
+            // 
+            this.FavoriteCntBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.FavoriteCntBtn.Location = new System.Drawing.Point(1647, 838);
+            this.FavoriteCntBtn.Name = "FavoriteCntBtn";
+            this.FavoriteCntBtn.Size = new System.Drawing.Size(235, 78);
+            this.FavoriteCntBtn.TabIndex = 21;
+            this.FavoriteCntBtn.Text = "お気に入り追加";
+            this.FavoriteCntBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1798, 717);
+            this.ClientSize = new System.Drawing.Size(1904, 997);
+            this.Controls.Add(this.FavoriteCntBtn);
             this.Controls.Add(this.MenuDgv3);
             this.Controls.Add(this.MenuDgv2);
             this.Controls.Add(this.MenuDgv1);
-            this.Controls.Add(this.Storepicture3);
-            this.Controls.Add(this.Storepicture2);
-            this.Controls.Add(this.Storepicture1);
-            this.Controls.Add(this.Storelbl3);
-            this.Controls.Add(this.Storelbl2);
-            this.Controls.Add(this.Storelbl1);
+            this.Controls.Add(this.StorePicture3);
+            this.Controls.Add(this.StorePicture2);
+            this.Controls.Add(this.StorePicture1);
+            this.Controls.Add(this.StoreLbl3);
+            this.Controls.Add(this.StoreLbl2);
+            this.Controls.Add(this.StoreLbl1);
             this.Controls.Add(this.FavoriteBtn);
             this.Controls.Add(this.SearchBtn);
             this.Controls.Add(this.MenuTbx);
@@ -265,10 +275,9 @@
             this.Controls.Add(this.HomeBtn);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Storepicture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Storepicture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Storepicture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv3)).EndInit();
@@ -288,15 +297,16 @@
         private System.Windows.Forms.TextBox MenuTbx;
         private System.Windows.Forms.Button SearchBtn;
         private System.Windows.Forms.Button FavoriteBtn;
-        private System.Windows.Forms.Label Storelbl1;
-        private System.Windows.Forms.Label Storelbl2;
-        private System.Windows.Forms.Label Storelbl3;
-        private System.Windows.Forms.PictureBox Storepicture1;
-        private System.Windows.Forms.PictureBox Storepicture2;
-        private System.Windows.Forms.PictureBox Storepicture3;
+        private System.Windows.Forms.Label StoreLbl1;
+        private System.Windows.Forms.Label StoreLbl2;
+        private System.Windows.Forms.Label StoreLbl3;
+        private System.Windows.Forms.PictureBox StorePicture1;
+        private System.Windows.Forms.PictureBox StorePicture2;
+        private System.Windows.Forms.PictureBox StorePicture3;
         private System.Windows.Forms.DataGridView MenuDgv1;
         private System.Windows.Forms.DataGridView MenuDgv2;
         private System.Windows.Forms.DataGridView MenuDgv3;
+        private System.Windows.Forms.Button FavoriteCntBtn;
     }
 }
 
