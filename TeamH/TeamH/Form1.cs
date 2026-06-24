@@ -21,5 +21,22 @@ namespace teamH
         {
             
         }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FavoriteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
