@@ -248,6 +248,7 @@
             this.FavoriteCntBtn.TabIndex = 21;
             this.FavoriteCntBtn.Text = "お気に入り追加";
             this.FavoriteCntBtn.UseVisualStyleBackColor = true;
+            this.FavoriteCntBtn.Click += new System.EventHandler(this.FavoriteCntBtn_Click);
             // 
             // Form1
             // 

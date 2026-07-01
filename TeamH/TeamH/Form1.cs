@@ -29,7 +29,9 @@ namespace teamH
 
         }
 
+        private void FavoriteCntBtn_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
