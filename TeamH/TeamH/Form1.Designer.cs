@@ -58,9 +58,10 @@
             // HomeBtn
             // 
             this.HomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.HomeBtn.Location = new System.Drawing.Point(37, 33);
+            this.HomeBtn.Location = new System.Drawing.Point(46, 40);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(124, 54);
+            this.HomeBtn.Size = new System.Drawing.Size(155, 65);
             this.HomeBtn.TabIndex = 0;
             this.HomeBtn.Text = "Home";
             this.HomeBtn.UseVisualStyleBackColor = true;
@@ -69,9 +70,10 @@
             // 
             this.WeekLbl.AutoSize = true;
             this.WeekLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.WeekLbl.Location = new System.Drawing.Point(72, 110);
+            this.WeekLbl.Location = new System.Drawing.Point(90, 132);
+            this.WeekLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WeekLbl.Name = "WeekLbl";
-            this.WeekLbl.Size = new System.Drawing.Size(49, 20);
+            this.WeekLbl.Size = new System.Drawing.Size(58, 24);
             this.WeekLbl.TabIndex = 1;
             this.WeekLbl.Text = "曜日";
             // 
@@ -79,9 +81,10 @@
             // 
             this.StoreLbl.AutoSize = true;
             this.StoreLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl.Location = new System.Drawing.Point(72, 166);
+            this.StoreLbl.Location = new System.Drawing.Point(90, 199);
+            this.StoreLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StoreLbl.Name = "StoreLbl";
-            this.StoreLbl.Size = new System.Drawing.Size(49, 20);
+            this.StoreLbl.Size = new System.Drawing.Size(58, 24);
             this.StoreLbl.TabIndex = 2;
             this.StoreLbl.Text = "店名";
             // 
@@ -89,9 +92,10 @@
             // 
             this.MenuLbl.AutoSize = true;
             this.MenuLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.MenuLbl.Location = new System.Drawing.Point(72, 228);
+            this.MenuLbl.Location = new System.Drawing.Point(90, 274);
+            this.MenuLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MenuLbl.Name = "MenuLbl";
-            this.MenuLbl.Size = new System.Drawing.Size(89, 20);
+            this.MenuLbl.Size = new System.Drawing.Size(106, 24);
             this.MenuLbl.TabIndex = 3;
             this.MenuLbl.Text = "メニュー";
             // 
@@ -104,9 +108,10 @@
             "水",
             "木",
             "金"});
-            this.WeekCbx.Location = new System.Drawing.Point(173, 110);
+            this.WeekCbx.Location = new System.Drawing.Point(216, 132);
+            this.WeekCbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WeekCbx.Name = "WeekCbx";
-            this.WeekCbx.Size = new System.Drawing.Size(121, 23);
+            this.WeekCbx.Size = new System.Drawing.Size(150, 26);
             this.WeekCbx.TabIndex = 4;
             // 
             // StoreCbx
@@ -119,24 +124,27 @@
             "クレープスマイル",
             "たこ丸キッチン",
             "ソウルキッチン号"});
-            this.StoreCbx.Location = new System.Drawing.Point(173, 163);
+            this.StoreCbx.Location = new System.Drawing.Point(216, 196);
+            this.StoreCbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StoreCbx.Name = "StoreCbx";
-            this.StoreCbx.Size = new System.Drawing.Size(121, 23);
+            this.StoreCbx.Size = new System.Drawing.Size(150, 26);
             this.StoreCbx.TabIndex = 5;
             // 
             // MenuTbx
             // 
-            this.MenuTbx.Location = new System.Drawing.Point(173, 229);
+            this.MenuTbx.Location = new System.Drawing.Point(216, 275);
+            this.MenuTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuTbx.Name = "MenuTbx";
-            this.MenuTbx.Size = new System.Drawing.Size(121, 22);
+            this.MenuTbx.Size = new System.Drawing.Size(150, 25);
             this.MenuTbx.TabIndex = 6;
             // 
             // SearchBtn
             // 
             this.SearchBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SearchBtn.Location = new System.Drawing.Point(220, 274);
+            this.SearchBtn.Location = new System.Drawing.Point(275, 329);
+            this.SearchBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(94, 44);
+            this.SearchBtn.Size = new System.Drawing.Size(118, 53);
             this.SearchBtn.TabIndex = 8;
             this.SearchBtn.Text = "検索";
             this.SearchBtn.UseVisualStyleBackColor = true;
@@ -146,9 +154,10 @@
             // 
             this.FavoriteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FavoriteBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.FavoriteBtn.Location = new System.Drawing.Point(37, 383);
+            this.FavoriteBtn.Location = new System.Drawing.Point(46, 460);
+            this.FavoriteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FavoriteBtn.Name = "FavoriteBtn";
-            this.FavoriteBtn.Size = new System.Drawing.Size(345, 55);
+            this.FavoriteBtn.Size = new System.Drawing.Size(431, 66);
             this.FavoriteBtn.TabIndex = 10;
             this.FavoriteBtn.Text = "お気に入り・ランキング";
             this.FavoriteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,9 +168,10 @@
             // 
             this.StoreLbl1.AutoSize = true;
             this.StoreLbl1.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl1.Location = new System.Drawing.Point(523, 67);
+            this.StoreLbl1.Location = new System.Drawing.Point(654, 80);
+            this.StoreLbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StoreLbl1.Name = "StoreLbl1";
-            this.StoreLbl1.Size = new System.Drawing.Size(85, 33);
+            this.StoreLbl1.Size = new System.Drawing.Size(99, 40);
             this.StoreLbl1.TabIndex = 11;
             this.StoreLbl1.Text = "店名";
             // 
@@ -169,9 +179,10 @@
             // 
             this.StoreLbl2.AutoSize = true;
             this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl2.Location = new System.Drawing.Point(935, 67);
+            this.StoreLbl2.Location = new System.Drawing.Point(1169, 80);
+            this.StoreLbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StoreLbl2.Name = "StoreLbl2";
-            this.StoreLbl2.Size = new System.Drawing.Size(85, 33);
+            this.StoreLbl2.Size = new System.Drawing.Size(99, 40);
             this.StoreLbl2.TabIndex = 12;
             this.StoreLbl2.Text = "店名";
             // 
@@ -179,72 +190,80 @@
             // 
             this.StoreLbl3.AutoSize = true;
             this.StoreLbl3.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl3.Location = new System.Drawing.Point(1343, 67);
+            this.StoreLbl3.Location = new System.Drawing.Point(1679, 80);
+            this.StoreLbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StoreLbl3.Name = "StoreLbl3";
-            this.StoreLbl3.Size = new System.Drawing.Size(85, 33);
+            this.StoreLbl3.Size = new System.Drawing.Size(99, 40);
             this.StoreLbl3.TabIndex = 13;
             this.StoreLbl3.Text = "店名";
             // 
             // StorePicture1
             // 
-            this.StorePicture1.Location = new System.Drawing.Point(423, 110);
+            this.StorePicture1.Location = new System.Drawing.Point(529, 132);
+            this.StorePicture1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StorePicture1.Name = "StorePicture1";
-            this.StorePicture1.Size = new System.Drawing.Size(331, 208);
+            this.StorePicture1.Size = new System.Drawing.Size(414, 250);
             this.StorePicture1.TabIndex = 15;
             this.StorePicture1.TabStop = false;
             // 
             // StorePicture2
             // 
-            this.StorePicture2.Location = new System.Drawing.Point(828, 110);
+            this.StorePicture2.Location = new System.Drawing.Point(1035, 132);
+            this.StorePicture2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StorePicture2.Name = "StorePicture2";
-            this.StorePicture2.Size = new System.Drawing.Size(322, 208);
+            this.StorePicture2.Size = new System.Drawing.Size(402, 250);
             this.StorePicture2.TabIndex = 16;
             this.StorePicture2.TabStop = false;
             // 
             // StorePicture3
             // 
-            this.StorePicture3.Location = new System.Drawing.Point(1224, 107);
+            this.StorePicture3.Location = new System.Drawing.Point(1530, 128);
+            this.StorePicture3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StorePicture3.Name = "StorePicture3";
-            this.StorePicture3.Size = new System.Drawing.Size(322, 208);
+            this.StorePicture3.Size = new System.Drawing.Size(402, 250);
             this.StorePicture3.TabIndex = 17;
             this.StorePicture3.TabStop = false;
             // 
             // MenuDgv1
             // 
             this.MenuDgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MenuDgv1.Location = new System.Drawing.Point(423, 361);
+            this.MenuDgv1.Location = new System.Drawing.Point(529, 433);
+            this.MenuDgv1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuDgv1.Name = "MenuDgv1";
             this.MenuDgv1.RowHeadersWidth = 51;
             this.MenuDgv1.RowTemplate.Height = 24;
-            this.MenuDgv1.Size = new System.Drawing.Size(331, 274);
+            this.MenuDgv1.Size = new System.Drawing.Size(414, 329);
             this.MenuDgv1.TabIndex = 18;
             // 
             // MenuDgv2
             // 
             this.MenuDgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MenuDgv2.Location = new System.Drawing.Point(828, 361);
+            this.MenuDgv2.Location = new System.Drawing.Point(1035, 433);
+            this.MenuDgv2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuDgv2.Name = "MenuDgv2";
             this.MenuDgv2.RowHeadersWidth = 51;
             this.MenuDgv2.RowTemplate.Height = 24;
-            this.MenuDgv2.Size = new System.Drawing.Size(322, 274);
+            this.MenuDgv2.Size = new System.Drawing.Size(402, 329);
             this.MenuDgv2.TabIndex = 19;
             // 
             // MenuDgv3
             // 
             this.MenuDgv3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MenuDgv3.Location = new System.Drawing.Point(1224, 361);
+            this.MenuDgv3.Location = new System.Drawing.Point(1530, 433);
+            this.MenuDgv3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MenuDgv3.Name = "MenuDgv3";
             this.MenuDgv3.RowHeadersWidth = 51;
             this.MenuDgv3.RowTemplate.Height = 24;
-            this.MenuDgv3.Size = new System.Drawing.Size(322, 274);
+            this.MenuDgv3.Size = new System.Drawing.Size(402, 329);
             this.MenuDgv3.TabIndex = 20;
             // 
             // FavoriteCntBtn
             // 
             this.FavoriteCntBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.FavoriteCntBtn.Location = new System.Drawing.Point(1369, 658);
+            this.FavoriteCntBtn.Location = new System.Drawing.Point(1711, 790);
+            this.FavoriteCntBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FavoriteCntBtn.Name = "FavoriteCntBtn";
-            this.FavoriteCntBtn.Size = new System.Drawing.Size(235, 74);
+            this.FavoriteCntBtn.Size = new System.Drawing.Size(294, 89);
             this.FavoriteCntBtn.TabIndex = 21;
             this.FavoriteCntBtn.Text = "お気に入り追加";
             this.FavoriteCntBtn.UseVisualStyleBackColor = true;
@@ -252,10 +271,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1904, 997);
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
             this.Controls.Add(this.FavoriteCntBtn);
             this.Controls.Add(this.MenuDgv3);
             this.Controls.Add(this.MenuDgv2);
@@ -275,8 +294,10 @@
             this.Controls.Add(this.StoreLbl);
             this.Controls.Add(this.WeekLbl);
             this.Controls.Add(this.HomeBtn);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).EndInit();
