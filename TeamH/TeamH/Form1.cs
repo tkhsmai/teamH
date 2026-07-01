@@ -18,8 +18,7 @@ namespace teamH
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
+            Console.WriteLine("Form1_Load");        }
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
