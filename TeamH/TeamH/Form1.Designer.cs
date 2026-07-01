@@ -259,6 +259,7 @@
             // 
             // FavoriteCntBtn
             // 
+            this.FavoriteCntBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.FavoriteCntBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FavoriteCntBtn.Location = new System.Drawing.Point(1711, 790);
             this.FavoriteCntBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -266,7 +267,7 @@
             this.FavoriteCntBtn.Size = new System.Drawing.Size(294, 89);
             this.FavoriteCntBtn.TabIndex = 21;
             this.FavoriteCntBtn.Text = "お気に入り追加";
-            this.FavoriteCntBtn.UseVisualStyleBackColor = true;
+            this.FavoriteCntBtn.UseVisualStyleBackColor = false;
             this.FavoriteCntBtn.Click += new System.EventHandler(this.FavoriteCntBtn_Click);
             // 
             // Form1
