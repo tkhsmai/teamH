@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace teamH
 {
@@ -19,7 +20,124 @@ namespace teamH
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            Console.WriteLine("Form1_Load");        }
+            int todayWeekdayId = (int)DateTime.Today.DayOfWeek;
+            switch (DateTime.Today.DayOfWeek)
+            {
+                case DayOfWeek.Monday:
+                    todayWeekdayId = 1;
+                    break;
+                case DayOfWeek.Tuesday:
+                    todayWeekdayId = 2;
+                    break;
+                case DayOfWeek.Wednesday:
+                    todayWeekdayId = 3;
+                    break;
+                case DayOfWeek.Thursday:
+                    todayWeekdayId = 4;
+                    break;
+                case DayOfWeek.Friday:
+                    todayWeekdayId = 5;
+                    break;
+                default:
+                    MessageBox.Show("本日は休日のため、出店はありません。");
+                    return;
+            }
+
+            Label[] StoreLbl = { StoreLbl1, StoreLbl2, StoreLbl3 };
+            PictureBox[] StorePic = { StorePicture1, StorePicture2, StorePicture3 };
+            DataGridView[] Menu = { MenuDgv1, MenuDgv2, MenuDgv3 };
+
+            string imagePath = @"C:\Users\User\Desktop\アプリケーション開発\チーム開発\images\";
+            string fileName1 = "";
+            string fileName2 = "";
+            string fileName3 = "";
+
+            switch (todayWeekdayId)
+            {
+                case 1:
+                    fileName1 = "store1.jpeg";
+                    fileName2 = "store2.jpg";
+                    fileName3 = "store3.jpg";
+                    break;
+                case 2:
+                    fileName1 = "store4.jpg";
+                    fileName2 = "store5.png";
+                    fileName3 = "store6.jpg";
+                    break;
+                case 3:
+                    fileName1 = "store1.jpeg";
+                    fileName2 = "store2.jpg";
+                    fileName3 = "store3.jpg";
+                    break;
+                case 4:
+                    fileName1 = "store4.jpg";
+                    fileName2 = "store5.png";
+                    fileName3 = "store6.jpg";
+                    break;
+                case 5:
+                    fileName1 = "store1.jpeg";
+                    fileName2 = "store3.jpg";
+                    fileName3 = "store5.png";
+                    break;
+            }
+
+            string[] fileNames = { fileName1, fileName2, fileName3 };
+
+            for (int i = 0; i < 3; i++)
+            {
+                string filePath = imagePath + fileNames[i];
+                if (System.IO.File.Exists(filePath) && !string.IsNullOrEmpty(fileNames[i]))
+                {
+                    StorePic[i].Image = Image.FromFile(filePath);
+                    StorePic[i].SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                else
+                {
+                    StorePic[i].Image = null;
+                }
+            }
+
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
+            
+            {
+                conn.Open();
+
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT");
+                sql.Append("     Store.store_name");
+                sql.Append("     , Store.image");
+                sql.Append(" FROM");
+                sql.Append("    Store");
+                sql.Append("    INNER JOIN Weekday");
+                sql.Append("        ON Store.weekday_id = Weekday.weekday_id");
+                sql.Append(" WHERE");
+                sql.Append("     Weekday.weekday = @weekday");
+
+                DataTable storeDt = new DataTable();
+                //using SqlCommand cmd = new SqlCommand(sql.ToString(), conn);
+                //{
+                //    cmd.Parameters.Add("@weekday", SqlDbType.Int).Value = todayWeekdayId;
+                //
+                //    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                //    adapter.Fill(storeDt);
+                //}
+                //
+                //
+                //for (int i = 0; i < storeDt.Rows.Count && i < 3; i++)
+                //{
+                //    DataRow row = storeDt.Rows[i];
+                //    int storeId = Convert.ToInt32(row["store_id"]);
+                //
+                //    StoreLbl[i].Text = row["store_name"].ToString();
+                //
+                //    StorePic[i].Image = imageList1.Images[ImageIndex];
+                //}
+
+
+            }
+            
+
+        }
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
