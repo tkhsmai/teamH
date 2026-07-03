@@ -47,7 +47,7 @@ namespace teamH
             PictureBox[] StorePic = { StorePicture1, StorePicture2, StorePicture3 };
             DataGridView[] Menu = { MenuDgv1, MenuDgv2, MenuDgv3 };
 
-            string imagePath = @"\\NI85S-DNHBB-253\Users\User\Desktop\アプリケーション開発\チーム開発\teamH\images\";
+            string imagePath = @"C:\Users\User\Desktop\アプリケーション開発\チーム開発\teamH\TeamH\TeamH\Resources\";
             string fileName1 = "";
             string fileName2 = "";
             string fileName3 = "";
@@ -86,6 +86,9 @@ namespace teamH
             for (int i = 0; i < 3; i++)
             {
                 string filePath = imagePath + fileNames[i];
+                //Console.WriteLine("画像名" + fileNames[i]);
+                //Console.WriteLine("画像のパス" + imagePath);
+                //Console.WriteLine("最終パス" + filePath);
                 if (System.IO.File.Exists(filePath) && !string.IsNullOrEmpty(fileNames[i]))
                 {
                     StorePic[i].Image = Image.FromFile(filePath);

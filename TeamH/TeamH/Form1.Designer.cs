@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.HomeBtn = new System.Windows.Forms.Button();
             this.WeekLbl = new System.Windows.Forms.Label();
             this.StoreLbl = new System.Windows.Forms.Label();
@@ -48,7 +47,6 @@
             this.MenuDgv2 = new System.Windows.Forms.DataGridView();
             this.MenuDgv3 = new System.Windows.Forms.DataGridView();
             this.FavoriteCntBtn = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).BeginInit();
@@ -259,12 +257,6 @@
             this.FavoriteCntBtn.UseVisualStyleBackColor = false;
             this.FavoriteCntBtn.Click += new System.EventHandler(this.FavoriteCntBtn_Click);
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -326,7 +318,6 @@
         private System.Windows.Forms.DataGridView MenuDgv2;
         private System.Windows.Forms.DataGridView MenuDgv3;
         private System.Windows.Forms.Button FavoriteCntBtn;
-        private System.Windows.Forms.ImageList imageList1;
     }
 }
 
