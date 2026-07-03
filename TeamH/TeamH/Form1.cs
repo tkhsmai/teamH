@@ -37,18 +37,18 @@ namespace teamH
         {
             //trygetGrid を最初に宣言する
             DataGridView trygetGrid = null;
-            //DAtaGridviewの選択ジュのチェックボックス
+            //DAtaGridviewの選択行のチェックボックス
             if (MenuDgv1.CurrentRow != null)
             {
                 trygetGrid = MenuDgv1;
             }
             else if (MenuDgv2.CurrentRow != null)
             {
-                trygetGrid = MenuDgv1;
+                trygetGrid = MenuDgv2;
             }
             else if (MenuDgv3.CurrentRow != null)
             {
-                trygetGrid = MenuDgv1;
+                trygetGrid = MenuDgv3;
             }
             //選択されていない場合
             if(trygetGrid == null)
@@ -76,11 +76,10 @@ namespace teamH
                 sql.Append(" @store_id,");
                 sql.Append(" @menu_id,");
                 sql.Append(" @weekday_id,");
-                sql.Append(" @store_id,");
                 sql.Append(" )");
                 cmd.CommandText = sql.ToString();
                 //パラメーター追加
-                cmd.Parameters.Add("store_id", SqlDbType.Int).Value = storeId;
+                cmd.Parameters.Add("@store_id", SqlDbType.Int).Value = storeId;
                 cmd.Parameters.Add("@menu_id", SqlDbType.Int).Value = menuId;
                 cmd.Parameters.Add("@weekday_id", SqlDbType.Int).Value = weekdayId;
 
