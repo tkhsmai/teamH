@@ -21,5 +21,14 @@ namespace teamH
         {
 
         }
+
+        private void BHomeBtn_Click(object sender, EventArgs e)
+        {
+
+            Form1 form1 = (Form1)Application.OpenForms["Form1"];
+            form1.Show();
+            this.Close();
+
+        }
     }
 }
