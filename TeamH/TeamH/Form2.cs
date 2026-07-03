@@ -16,5 +16,10 @@ namespace teamH
         {
             InitializeComponent();
         }
+
+        private void RkMenuDgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
