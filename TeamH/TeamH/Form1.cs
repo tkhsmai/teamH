@@ -47,7 +47,7 @@ namespace teamH
             PictureBox[] StorePic = { StorePicture1, StorePicture2, StorePicture3 };
             DataGridView[] Menu = { MenuDgv1, MenuDgv2, MenuDgv3 };
 
-            string imagePath = @"C:\Users\User\Desktop\アプリケーション開発\チーム開発\images\";
+            string imagePath = @"C:\Users\User\Desktop\アプリケーション開発\チーム開発\teamH\images\";
             string fileName1 = "";
             string fileName2 = "";
             string fileName3 = "";
