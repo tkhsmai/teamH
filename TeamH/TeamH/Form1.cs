@@ -47,58 +47,40 @@ namespace teamH
             PictureBox[] StorePic = { StorePicture1, StorePicture2, StorePicture3 };
             DataGridView[] Menu = { MenuDgv1, MenuDgv2, MenuDgv3 };
 
-            string imagePath = @"C:\Users\User\Desktop\アプリケーション開発\チーム開発\teamH\TeamH\TeamH\Resources\";
-            string fileName1 = "";
-            string fileName2 = "";
-            string fileName3 = "";
 
             switch (todayWeekdayId)
             {
                 case 1:
-                    fileName1 = "store1.jpeg";
-                    fileName2 = "store2.jpg";
-                    fileName3 = "store3.jpg";
+                    StorePicture1.Image = Properties.Resources.store1;
+                    StorePicture2.Image = Properties.Resources.store2;
+                    StorePicture3.Image = Properties.Resources.store3;
                     break;
                 case 2:
-                    fileName1 = "store4.jpg";
-                    fileName2 = "store5.png";
-                    fileName3 = "store6.jpg";
+                    StorePicture1.Image = Properties.Resources.store4;
+                    StorePicture2.Image = Properties.Resources.store5;
+                    StorePicture3.Image = Properties.Resources.store6;
                     break;
                 case 3:
-                    fileName1 = "store1.jpeg";
-                    fileName2 = "store2.jpg";
-                    fileName3 = "store3.jpg";
+                    StorePicture1.Image = Properties.Resources.store1;
+                    StorePicture2.Image = Properties.Resources.store2;
+                    StorePicture3.Image = Properties.Resources.store3;
                     break;
                 case 4:
-                    fileName1 = "store4.jpg";
-                    fileName2 = "store5.png";
-                    fileName3 = "store6.jpg";
+                    StorePicture1.Image = Properties.Resources.store4;
+                    StorePicture2.Image = Properties.Resources.store5;
+                    StorePicture3.Image = Properties.Resources.store6;
                     break;
                 case 5:
-                    fileName1 = "store1.jpeg";
-                    fileName2 = "store3.jpg";
-                    fileName3 = "store5.png";
+                    StorePicture1.Image = Properties.Resources.store1;
+                    StorePicture2.Image = Properties.Resources.store3;
+                    StorePicture3.Image = Properties.Resources.store5;
                     break;
             }
 
-            string[] fileNames = { fileName1, fileName2, fileName3 };
-
-            for (int i = 0; i < 3; i++)
-            {
-                string filePath = imagePath + fileNames[i];
-                //Console.WriteLine("画像名" + fileNames[i]);
-                //Console.WriteLine("画像のパス" + imagePath);
-                //Console.WriteLine("最終パス" + filePath);
-                if (System.IO.File.Exists(filePath) && !string.IsNullOrEmpty(fileNames[i]))
-                {
-                    StorePic[i].Image = Image.FromFile(filePath);
-                    StorePic[i].SizeMode = PictureBoxSizeMode.Zoom;
-                }
-                else
-                {
-                    StorePic[i].Image = null;
-                }
-            }
+            StorePicture1.SizeMode = PictureBoxSizeMode.Zoom;
+            StorePicture2.SizeMode = PictureBoxSizeMode.Zoom;
+            StorePicture3.SizeMode = PictureBoxSizeMode.Zoom;
+        
 
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
             
