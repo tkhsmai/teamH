@@ -80,10 +80,10 @@ namespace teamH
             StorePicture1.SizeMode = PictureBoxSizeMode.Zoom;
             StorePicture2.SizeMode = PictureBoxSizeMode.Zoom;
             StorePicture3.SizeMode = PictureBoxSizeMode.Zoom;
-        
+
 
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
-            
+
             {
                 conn.Open();
 
@@ -92,38 +92,54 @@ namespace teamH
                 sql.Append("     Store.store_name");
                 sql.Append("     , Store.image");
                 sql.Append(" FROM");
-                sql.Append("    Store");
-                sql.Append("    INNER JOIN Weekday");
-                sql.Append("        ON Store.weekday_id = Weekday.weekday_id");
+                sql.Append("     StoreWeekday");
+                sql.Append("     INNER JOIN Store");
+                sql.Append("         ON StoreWeekday.store_id = Store.store_id");
                 sql.Append(" WHERE");
-                sql.Append("     Weekday.weekday = @weekday");
+                sql.Append("     StoreWeekday.weekday_id = @weekday");
+
 
                 DataTable storeDt = new DataTable();
-                //using SqlCommand cmd = new SqlCommand(sql.ToString(), conn);
-                //{
-                //    cmd.Parameters.Add("@weekday", SqlDbType.Int).Value = todayWeekdayId;
-                //
-                //    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                //    adapter.Fill(storeDt);
-                //}
-                //
-                //
-                //for (int i = 0; i < storeDt.Rows.Count && i < 3; i++)
-                //{
-                //    DataRow row = storeDt.Rows[i];
-                //    int storeId = Convert.ToInt32(row["store_id"]);
-                //
-                //    StoreLbl[i].Text = row["store_name"].ToString();
-                //
-                //    StorePic[i].Image = imageList1.Images[ImageIndex];
-                //}
+                using (SqlCommand cmd = new SqlCommand(sql.ToString(), conn))
+                {
+                    cmd.Parameters.Add("@weekday", SqlDbType.Int).Value = todayWeekdayId;
 
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(storeDt);
+                }
+                for (int i = 0; i < storeDt.Rows.Count && i < 3; i++)
+                {
+                    DataRow row = storeDt.Rows[i];
 
+                    // 店名をラベルに表示
+                    StoreLbl[i].Text = row["store_name"].ToString();
+
+                    // DBの image 列に 'store1' ～ 'store6' が入っている前提
+                    string imageKey = row["image"].ToString();   // 例: "store1"
+
+                    if (!string.IsNullOrEmpty(imageKey))
+                    {
+                        // ★ ここで img を作る
+                        var img = Properties.Resources.ResourceManager.GetObject(imageKey) as Image;
+
+                        if (img != null)
+                        {
+                            StorePic[i].Image = img;
+                            StorePic[i].SizeMode = PictureBoxSizeMode.Zoom;
+                        }
+                        else
+                        {
+                            StorePic[i].Image = null;
+                        }
+                    }
+                    else
+                    {
+                        StorePic[i].Image = null;
+                    }
+
+                }
             }
-            
-
         }
-
         private void SearchBtn_Click(object sender, EventArgs e)
         {
 
