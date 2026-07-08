@@ -49,6 +49,7 @@
             this.FavoriteCntBtn = new System.Windows.Forms.Button();
             this.TodayLbl = new System.Windows.Forms.Label();
             this.TitleLbl = new System.Windows.Forms.Label();
+            this.SearchLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).BeginInit();
@@ -60,7 +61,7 @@
             // HomeBtn
             // 
             this.HomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.HomeBtn.Location = new System.Drawing.Point(37, 33);
+            this.HomeBtn.Location = new System.Drawing.Point(37, 71);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(124, 54);
             this.HomeBtn.TabIndex = 0;
@@ -70,30 +71,30 @@
             // WeekLbl
             // 
             this.WeekLbl.AutoSize = true;
-            this.WeekLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.WeekLbl.Location = new System.Drawing.Point(72, 110);
+            this.WeekLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.WeekLbl.Location = new System.Drawing.Point(55, 230);
             this.WeekLbl.Name = "WeekLbl";
-            this.WeekLbl.Size = new System.Drawing.Size(49, 20);
+            this.WeekLbl.Size = new System.Drawing.Size(64, 25);
             this.WeekLbl.TabIndex = 1;
             this.WeekLbl.Text = "曜日";
             // 
             // StoreLbl
             // 
             this.StoreLbl.AutoSize = true;
-            this.StoreLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl.Location = new System.Drawing.Point(72, 166);
+            this.StoreLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl.Location = new System.Drawing.Point(55, 287);
             this.StoreLbl.Name = "StoreLbl";
-            this.StoreLbl.Size = new System.Drawing.Size(49, 20);
+            this.StoreLbl.Size = new System.Drawing.Size(64, 25);
             this.StoreLbl.TabIndex = 2;
             this.StoreLbl.Text = "店名";
             // 
             // MenuLbl
             // 
             this.MenuLbl.AutoSize = true;
-            this.MenuLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.MenuLbl.Location = new System.Drawing.Point(72, 228);
+            this.MenuLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MenuLbl.Location = new System.Drawing.Point(45, 347);
             this.MenuLbl.Name = "MenuLbl";
-            this.MenuLbl.Size = new System.Drawing.Size(89, 20);
+            this.MenuLbl.Size = new System.Drawing.Size(116, 25);
             this.MenuLbl.TabIndex = 3;
             this.MenuLbl.Text = "メニュー";
             // 
@@ -106,9 +107,9 @@
             "水",
             "木",
             "金"});
-            this.WeekCbx.Location = new System.Drawing.Point(173, 110);
+            this.WeekCbx.Location = new System.Drawing.Point(189, 228);
             this.WeekCbx.Name = "WeekCbx";
-            this.WeekCbx.Size = new System.Drawing.Size(121, 23);
+            this.WeekCbx.Size = new System.Drawing.Size(136, 23);
             this.WeekCbx.TabIndex = 4;
             // 
             // StoreCbx
@@ -121,22 +122,22 @@
             "クレープスマイル",
             "たこ丸キッチン",
             "ソウルキッチン号"});
-            this.StoreCbx.Location = new System.Drawing.Point(173, 163);
+            this.StoreCbx.Location = new System.Drawing.Point(189, 289);
             this.StoreCbx.Name = "StoreCbx";
-            this.StoreCbx.Size = new System.Drawing.Size(121, 23);
+            this.StoreCbx.Size = new System.Drawing.Size(136, 23);
             this.StoreCbx.TabIndex = 5;
             // 
             // MenuTbx
             // 
-            this.MenuTbx.Location = new System.Drawing.Point(173, 229);
+            this.MenuTbx.Location = new System.Drawing.Point(189, 347);
             this.MenuTbx.Name = "MenuTbx";
-            this.MenuTbx.Size = new System.Drawing.Size(121, 22);
+            this.MenuTbx.Size = new System.Drawing.Size(136, 22);
             this.MenuTbx.TabIndex = 6;
             // 
             // SearchBtn
             // 
             this.SearchBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SearchBtn.Location = new System.Drawing.Point(220, 274);
+            this.SearchBtn.Location = new System.Drawing.Point(231, 392);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(94, 44);
             this.SearchBtn.TabIndex = 8;
@@ -148,7 +149,7 @@
             // 
             this.FavoriteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FavoriteBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.FavoriteBtn.Location = new System.Drawing.Point(37, 383);
+            this.FavoriteBtn.Location = new System.Drawing.Point(37, 520);
             this.FavoriteBtn.Name = "FavoriteBtn";
             this.FavoriteBtn.Size = new System.Drawing.Size(345, 55);
             this.FavoriteBtn.TabIndex = 10;
@@ -159,33 +160,30 @@
             // 
             // StoreLbl1
             // 
-            this.StoreLbl1.AutoSize = true;
             this.StoreLbl1.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl1.Location = new System.Drawing.Point(531, 181);
+            this.StoreLbl1.Location = new System.Drawing.Point(423, 181);
             this.StoreLbl1.Name = "StoreLbl1";
-            this.StoreLbl1.Size = new System.Drawing.Size(75, 30);
+            this.StoreLbl1.Size = new System.Drawing.Size(331, 30);
             this.StoreLbl1.TabIndex = 11;
             this.StoreLbl1.Text = "店名";
             this.StoreLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // StoreLbl2
             // 
-            this.StoreLbl2.AutoSize = true;
             this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl2.Location = new System.Drawing.Point(942, 181);
+            this.StoreLbl2.Location = new System.Drawing.Point(828, 181);
             this.StoreLbl2.Name = "StoreLbl2";
-            this.StoreLbl2.Size = new System.Drawing.Size(75, 30);
+            this.StoreLbl2.Size = new System.Drawing.Size(322, 33);
             this.StoreLbl2.TabIndex = 12;
             this.StoreLbl2.Text = "店名";
             this.StoreLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // StoreLbl3
             // 
-            this.StoreLbl3.AutoSize = true;
             this.StoreLbl3.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl3.Location = new System.Drawing.Point(1342, 181);
+            this.StoreLbl3.Location = new System.Drawing.Point(1224, 181);
             this.StoreLbl3.Name = "StoreLbl3";
-            this.StoreLbl3.Size = new System.Drawing.Size(75, 30);
+            this.StoreLbl3.Size = new System.Drawing.Size(322, 33);
             this.StoreLbl3.TabIndex = 13;
             this.StoreLbl3.Text = "店名";
             this.StoreLbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -284,12 +282,24 @@
             this.TitleLbl.TabIndex = 23;
             this.TitleLbl.Text = "キチナビ";
             // 
+            // SearchLbl
+            // 
+            this.SearchLbl.AutoSize = true;
+            this.SearchLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SearchLbl.Location = new System.Drawing.Point(45, 181);
+            this.SearchLbl.Name = "SearchLbl";
+            this.SearchLbl.Size = new System.Drawing.Size(93, 20);
+            this.SearchLbl.TabIndex = 24;
+            this.SearchLbl.Text = "絞り込み";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1705, 896);
+            this.Controls.Add(this.SearchLbl);
             this.Controls.Add(this.TitleLbl);
             this.Controls.Add(this.TodayLbl);
             this.Controls.Add(this.FavoriteCntBtn);
@@ -349,6 +359,7 @@
         private System.Windows.Forms.Button FavoriteCntBtn;
         private System.Windows.Forms.Label TodayLbl;
         private System.Windows.Forms.Label TitleLbl;
+        private System.Windows.Forms.Label SearchLbl;
     }
 }
 
