@@ -114,28 +114,7 @@ namespace teamH
                     // 店名をラベルに表示
                     StoreLbl[i].Text = row["store_name"].ToString();
 
-                    // DBの image 列に 'store1' ～ 'store6' が入っている前提
-                    string imageKey = row["image"].ToString();   // 例: "store1"
-
-                    if (!string.IsNullOrEmpty(imageKey))
-                    {
-                        // ★ ここで img を作る
-                        var img = Properties.Resources.ResourceManager.GetObject(imageKey) as Image;
-
-                        if (img != null)
-                        {
-                            StorePic[i].Image = img;
-                            StorePic[i].SizeMode = PictureBoxSizeMode.Zoom;
-                        }
-                        else
-                        {
-                            StorePic[i].Image = null;
-                        }
-                    }
-                    else
-                    {
-                        StorePic[i].Image = null;
-                    }
+                    
 
                 }
             }
