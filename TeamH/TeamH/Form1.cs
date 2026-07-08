@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Windows.Forms.ComponentModel.Com2Interop;
 
 namespace teamH
 {
@@ -89,7 +90,8 @@ namespace teamH
 
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" SELECT");
-                sql.Append("     Store.store_name");
+                sql.Append("     Store.store_id");
+                sql.Append("     ,Store.store_name");
                 sql.Append("     , Store.image");
                 sql.Append(" FROM");
                 sql.Append("     StoreWeekday");
@@ -113,9 +115,28 @@ namespace teamH
 
                     // 店名をラベルに表示
                     StoreLbl[i].Text = row["store_name"].ToString();
+                    int storeId = Convert.ToInt32(row["store_id"]);
 
-                    
+                    StringBuilder menusql = new StringBuilder();
+                    menusql.Append("SELECT");
+                    menusql.Append("    menu_name");
+                    menusql.Append("    ,price");
+                    menusql.Append(" FROM");
+                    menusql.Append("    Menu");
+                    menusql.Append(" WHERE");
+                    menusql.Append("    store_id = @store_id");
 
+                    using (SqlCommand cmd2 = new SqlCommand(menusql.ToString(), conn))
+                    {
+                        cmd2.Parameters.Add("@store_id", SqlDbType.Int).Value = storeId;
+                        SqlDataAdapter adapter2 = new SqlDataAdapter(cmd2);
+                        DataTable menuDt = new DataTable();
+                        adapter2.Fill(menuDt);
+
+                        Menu[i].DataSource = menuDt;
+                            
+
+                    }
                 }
             }
         }
