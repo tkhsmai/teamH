@@ -30,6 +30,7 @@ namespace teamH
         public Form1()
         {
             InitializeComponent();
+            TitlePicture.SendToBack();
         }
         private void Form1_Load(object sender, EventArgs e)
         {

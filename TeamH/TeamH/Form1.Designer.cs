@@ -1,4 +1,8 @@
-﻿namespace teamH
+﻿using System.Drawing;
+using System.Reflection.Emit;
+using System.Windows.Forms;
+
+namespace teamH
 {
     partial class Form1
     {
@@ -28,12 +32,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.HomeBtn = new System.Windows.Forms.Button();
             this.WeekLbl = new System.Windows.Forms.Label();
             this.StoreLbl = new System.Windows.Forms.Label();
@@ -46,27 +50,29 @@
             this.StoreLbl1 = new System.Windows.Forms.Label();
             this.StoreLbl2 = new System.Windows.Forms.Label();
             this.StoreLbl3 = new System.Windows.Forms.Label();
-            this.StorePicture1 = new System.Windows.Forms.PictureBox();
-            this.StorePicture2 = new System.Windows.Forms.PictureBox();
-            this.StorePicture3 = new System.Windows.Forms.PictureBox();
             this.MenuDgv1 = new System.Windows.Forms.DataGridView();
             this.MenuDgv2 = new System.Windows.Forms.DataGridView();
             this.MenuDgv3 = new System.Windows.Forms.DataGridView();
             this.FavoriteCntBtn = new System.Windows.Forms.Button();
             this.TodayLbl = new System.Windows.Forms.Label();
-            this.TitleLbl = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).BeginInit();
+            this.TitlePicture = new System.Windows.Forms.PictureBox();
+            this.StorePicture3 = new System.Windows.Forms.PictureBox();
+            this.StorePicture2 = new System.Windows.Forms.PictureBox();
+            this.StorePicture1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TitlePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).BeginInit();
             this.SuspendLayout();
             // 
             // HomeBtn
             // 
-            this.HomeBtn.BackColor = System.Drawing.Color.LightPink;
+            this.HomeBtn.BackColor = System.Drawing.Color.OldLace;
             this.HomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.SaddleBrown;
             this.HomeBtn.Location = new System.Drawing.Point(37, 71);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(124, 54);
@@ -78,7 +84,8 @@
             // 
             this.WeekLbl.AutoSize = true;
             this.WeekLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.WeekLbl.Location = new System.Drawing.Point(55, 230);
+            this.WeekLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.WeekLbl.Location = new System.Drawing.Point(86, 230);
             this.WeekLbl.Name = "WeekLbl";
             this.WeekLbl.Size = new System.Drawing.Size(64, 25);
             this.WeekLbl.TabIndex = 1;
@@ -88,7 +95,8 @@
             // 
             this.StoreLbl.AutoSize = true;
             this.StoreLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl.Location = new System.Drawing.Point(55, 287);
+            this.StoreLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.StoreLbl.Location = new System.Drawing.Point(86, 287);
             this.StoreLbl.Name = "StoreLbl";
             this.StoreLbl.Size = new System.Drawing.Size(64, 25);
             this.StoreLbl.TabIndex = 2;
@@ -98,7 +106,8 @@
             // 
             this.MenuLbl.AutoSize = true;
             this.MenuLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.MenuLbl.Location = new System.Drawing.Point(45, 347);
+            this.MenuLbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.MenuLbl.Location = new System.Drawing.Point(86, 352);
             this.MenuLbl.Name = "MenuLbl";
             this.MenuLbl.Size = new System.Drawing.Size(116, 25);
             this.MenuLbl.TabIndex = 3;
@@ -113,7 +122,7 @@
             "水",
             "木",
             "金"});
-            this.WeekCbx.Location = new System.Drawing.Point(189, 228);
+            this.WeekCbx.Location = new System.Drawing.Point(231, 230);
             this.WeekCbx.Name = "WeekCbx";
             this.WeekCbx.Size = new System.Drawing.Size(136, 23);
             this.WeekCbx.TabIndex = 4;
@@ -128,46 +137,51 @@
             "クレープスマイル",
             "たこ丸キッチン",
             "ソウルキッチン号"});
-            this.StoreCbx.Location = new System.Drawing.Point(189, 289);
+            this.StoreCbx.Location = new System.Drawing.Point(231, 287);
             this.StoreCbx.Name = "StoreCbx";
             this.StoreCbx.Size = new System.Drawing.Size(136, 23);
             this.StoreCbx.TabIndex = 5;
             // 
             // MenuTbx
             // 
-            this.MenuTbx.Location = new System.Drawing.Point(189, 347);
+            this.MenuTbx.Location = new System.Drawing.Point(231, 352);
             this.MenuTbx.Name = "MenuTbx";
             this.MenuTbx.Size = new System.Drawing.Size(136, 22);
             this.MenuTbx.TabIndex = 6;
             // 
             // SearchBtn
             // 
-            this.SearchBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SearchBtn.Location = new System.Drawing.Point(231, 392);
+            this.SearchBtn.BackColor = System.Drawing.Color.OldLace;
+            this.SearchBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SearchBtn.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.SearchBtn.Location = new System.Drawing.Point(273, 413);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(94, 44);
+            this.SearchBtn.Size = new System.Drawing.Size(109, 52);
             this.SearchBtn.TabIndex = 8;
             this.SearchBtn.Text = "検索";
-            this.SearchBtn.UseVisualStyleBackColor = true;
+            this.SearchBtn.UseVisualStyleBackColor = false;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
             // FavoriteBtn
             // 
-            this.FavoriteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.FavoriteBtn.BackColor = System.Drawing.Color.OldLace;
+            this.FavoriteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.FavoriteBtn.ForeColor = System.Drawing.Color.SaddleBrown;
             this.FavoriteBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.FavoriteBtn.Location = new System.Drawing.Point(37, 520);
+            this.FavoriteBtn.Location = new System.Drawing.Point(91, 520);
             this.FavoriteBtn.Name = "FavoriteBtn";
             this.FavoriteBtn.Size = new System.Drawing.Size(345, 55);
             this.FavoriteBtn.TabIndex = 10;
             this.FavoriteBtn.Text = "お気に入り・ランキング";
             this.FavoriteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.FavoriteBtn.UseVisualStyleBackColor = true;
+            this.FavoriteBtn.UseVisualStyleBackColor = false;
             this.FavoriteBtn.Click += new System.EventHandler(this.FavoriteBtn_Click);
             // 
             // StoreLbl1
             // 
             this.StoreLbl1.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl1.Location = new System.Drawing.Point(423, 184);
+            this.StoreLbl1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.StoreLbl1.Location = new System.Drawing.Point(536, 318);
             this.StoreLbl1.Name = "StoreLbl1";
             this.StoreLbl1.Size = new System.Drawing.Size(370, 30);
             this.StoreLbl1.TabIndex = 11;
@@ -177,9 +191,10 @@
             // StoreLbl2
             // 
             this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl2.Location = new System.Drawing.Point(877, 181);
+            this.StoreLbl2.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.StoreLbl2.Location = new System.Drawing.Point(988, 315);
             this.StoreLbl2.Name = "StoreLbl2";
-            this.StoreLbl2.Size = new System.Drawing.Size(357, 33);
+            this.StoreLbl2.Size = new System.Drawing.Size(370, 33);
             this.StoreLbl2.TabIndex = 12;
             this.StoreLbl2.Text = "店名";
             this.StoreLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,65 +202,36 @@
             // StoreLbl3
             // 
             this.StoreLbl3.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl3.Location = new System.Drawing.Point(1300, 181);
+            this.StoreLbl3.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.StoreLbl3.Location = new System.Drawing.Point(1440, 315);
             this.StoreLbl3.Name = "StoreLbl3";
             this.StoreLbl3.Size = new System.Drawing.Size(363, 33);
             this.StoreLbl3.TabIndex = 13;
             this.StoreLbl3.Text = "店名";
             this.StoreLbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // StorePicture1
-            // 
-            this.StorePicture1.Image = global::teamH.Properties.Resources.store5;
-            this.StorePicture1.Location = new System.Drawing.Point(423, 240);
-            this.StorePicture1.Name = "StorePicture1";
-            this.StorePicture1.Size = new System.Drawing.Size(370, 222);
-            this.StorePicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.StorePicture1.TabIndex = 15;
-            this.StorePicture1.TabStop = false;
-            // 
-            // StorePicture2
-            // 
-            this.StorePicture2.Image = global::teamH.Properties.Resources.store2;
-            this.StorePicture2.Location = new System.Drawing.Point(869, 240);
-            this.StorePicture2.Name = "StorePicture2";
-            this.StorePicture2.Size = new System.Drawing.Size(365, 222);
-            this.StorePicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.StorePicture2.TabIndex = 16;
-            this.StorePicture2.TabStop = false;
-            // 
-            // StorePicture3
-            // 
-            this.StorePicture3.Image = global::teamH.Properties.Resources.store4;
-            this.StorePicture3.Location = new System.Drawing.Point(1305, 240);
-            this.StorePicture3.Name = "StorePicture3";
-            this.StorePicture3.Size = new System.Drawing.Size(358, 224);
-            this.StorePicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.StorePicture3.TabIndex = 17;
-            this.StorePicture3.TabStop = false;
-            // 
             // MenuDgv1
             // 
             this.MenuDgv1.AllowUserToAddRows = false;
             this.MenuDgv1.BackgroundColor = System.Drawing.Color.OldLace;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MenuDgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MenuDgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.MenuDgv1.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MenuDgv1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.MenuDgv1.Location = new System.Drawing.Point(420, 504);
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MenuDgv1.DefaultCellStyle = dataGridViewCellStyle26;
+            this.MenuDgv1.Location = new System.Drawing.Point(533, 614);
             this.MenuDgv1.Name = "MenuDgv1";
             this.MenuDgv1.RowHeadersVisible = false;
             this.MenuDgv1.RowHeadersWidth = 51;
@@ -257,24 +243,24 @@
             // 
             this.MenuDgv2.AllowUserToAddRows = false;
             this.MenuDgv2.BackgroundColor = System.Drawing.Color.OldLace;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MenuDgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MenuDgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.MenuDgv2.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MenuDgv2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.MenuDgv2.Location = new System.Drawing.Point(869, 504);
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MenuDgv2.DefaultCellStyle = dataGridViewCellStyle28;
+            this.MenuDgv2.Location = new System.Drawing.Point(993, 614);
             this.MenuDgv2.Name = "MenuDgv2";
             this.MenuDgv2.RowHeadersVisible = false;
             this.MenuDgv2.RowHeadersWidth = 51;
@@ -286,24 +272,24 @@
             // 
             this.MenuDgv3.AllowUserToAddRows = false;
             this.MenuDgv3.BackgroundColor = System.Drawing.Color.OldLace;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MenuDgv3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MenuDgv3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.MenuDgv3.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MenuDgv3.DefaultCellStyle = dataGridViewCellStyle6;
-            this.MenuDgv3.Location = new System.Drawing.Point(1305, 504);
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MenuDgv3.DefaultCellStyle = dataGridViewCellStyle30;
+            this.MenuDgv3.Location = new System.Drawing.Point(1445, 614);
             this.MenuDgv3.Name = "MenuDgv3";
             this.MenuDgv3.RowHeadersVisible = false;
             this.MenuDgv3.RowHeadersWidth = 51;
@@ -313,11 +299,12 @@
             // 
             // FavoriteCntBtn
             // 
-            this.FavoriteCntBtn.BackColor = System.Drawing.Color.White;
+            this.FavoriteCntBtn.BackColor = System.Drawing.Color.OldLace;
             this.FavoriteCntBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.FavoriteCntBtn.Location = new System.Drawing.Point(1404, 785);
+            this.FavoriteCntBtn.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.FavoriteCntBtn.Location = new System.Drawing.Point(1572, 894);
             this.FavoriteCntBtn.Name = "FavoriteCntBtn";
-            this.FavoriteCntBtn.Size = new System.Drawing.Size(259, 74);
+            this.FavoriteCntBtn.Size = new System.Drawing.Size(259, 62);
             this.FavoriteCntBtn.TabIndex = 21;
             this.FavoriteCntBtn.Text = "☆お気に入り追加";
             this.FavoriteCntBtn.UseVisualStyleBackColor = false;
@@ -326,24 +313,54 @@
             // TodayLbl
             // 
             this.TodayLbl.AutoSize = true;
-            this.TodayLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TodayLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.TodayLbl.ForeColor = System.Drawing.Color.LightCoral;
-            this.TodayLbl.Location = new System.Drawing.Point(852, 128);
+            this.TodayLbl.Location = new System.Drawing.Point(955, 242);
             this.TodayLbl.Name = "TodayLbl";
-            this.TodayLbl.Size = new System.Drawing.Size(400, 33);
+            this.TodayLbl.Size = new System.Drawing.Size(422, 35);
             this.TodayLbl.TabIndex = 22;
             this.TodayLbl.Text = "＜～本日の出店店舗～＞";
             // 
-            // TitleLbl
+            // TitlePicture
             // 
-            this.TitleLbl.AutoSize = true;
-            this.TitleLbl.Font = new System.Drawing.Font("HG丸ｺﾞｼｯｸM-PRO", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TitleLbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TitleLbl.Location = new System.Drawing.Point(413, 25);
-            this.TitleLbl.Name = "TitleLbl";
-            this.TitleLbl.Size = new System.Drawing.Size(181, 40);
-            this.TitleLbl.TabIndex = 23;
-            this.TitleLbl.Text = "キチナビ";
+            this.TitlePicture.BackColor = System.Drawing.Color.Transparent;
+            this.TitlePicture.Image = global::teamH.Properties.Resources.kichinavi_logo_textonly;
+            this.TitlePicture.Location = new System.Drawing.Point(755, -114);
+            this.TitlePicture.Name = "TitlePicture";
+            this.TitlePicture.Size = new System.Drawing.Size(804, 424);
+            this.TitlePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TitlePicture.TabIndex = 23;
+            this.TitlePicture.TabStop = false;
+            // 
+            // StorePicture3
+            // 
+            this.StorePicture3.Image = global::teamH.Properties.Resources.store4;
+            this.StorePicture3.Location = new System.Drawing.Point(1445, 365);
+            this.StorePicture3.Name = "StorePicture3";
+            this.StorePicture3.Size = new System.Drawing.Size(358, 224);
+            this.StorePicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StorePicture3.TabIndex = 17;
+            this.StorePicture3.TabStop = false;
+            // 
+            // StorePicture2
+            // 
+            this.StorePicture2.Image = global::teamH.Properties.Resources.store2;
+            this.StorePicture2.Location = new System.Drawing.Point(993, 365);
+            this.StorePicture2.Name = "StorePicture2";
+            this.StorePicture2.Size = new System.Drawing.Size(365, 224);
+            this.StorePicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StorePicture2.TabIndex = 16;
+            this.StorePicture2.TabStop = false;
+            // 
+            // StorePicture1
+            // 
+            this.StorePicture1.Image = global::teamH.Properties.Resources.store5;
+            this.StorePicture1.Location = new System.Drawing.Point(536, 367);
+            this.StorePicture1.Name = "StorePicture1";
+            this.StorePicture1.Size = new System.Drawing.Size(370, 222);
+            this.StorePicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StorePicture1.TabIndex = 15;
+            this.StorePicture1.TabStop = false;
             // 
             // Form1
             // 
@@ -351,8 +368,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.OldLace;
-            this.ClientSize = new System.Drawing.Size(1705, 896);
-            this.Controls.Add(this.TitleLbl);
+            this.ClientSize = new System.Drawing.Size(1803, 1010);
+            this.Controls.Add(this.TitlePicture);
             this.Controls.Add(this.TodayLbl);
             this.Controls.Add(this.FavoriteCntBtn);
             this.Controls.Add(this.MenuDgv3);
@@ -377,12 +394,13 @@
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuDgv3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TitlePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StorePicture1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,7 +428,7 @@
         private System.Windows.Forms.DataGridView MenuDgv3;
         private System.Windows.Forms.Button FavoriteCntBtn;
         private System.Windows.Forms.Label TodayLbl;
-        private System.Windows.Forms.Label TitleLbl;
+        private System.Windows.Forms.PictureBox TitlePicture;
     }
 }
 

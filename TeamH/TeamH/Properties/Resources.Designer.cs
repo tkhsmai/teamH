@@ -63,6 +63,16 @@ namespace teamH.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap kichinavi_logo_textonly {
+            get {
+                object obj = ResourceManager.GetObject("kichinavi_logo_textonly", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap store1 {
             get {
                 object obj = ResourceManager.GetObject("store1", resourceCulture);
