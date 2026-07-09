@@ -133,18 +133,45 @@ namespace teamH
 
                         Menu[i].DataSource = menuDt;
 
-                        // DataGridViewの列幅を自動調整
+                        // 列設定
                         Menu[i].Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                         Menu[i].Columns[1].Width = 55;
 
-                        // DataGridViewの１行目を「メニュー」と「価格」に変更する
                         Menu[i].Columns["menu_name"].HeaderText = "メニュー";
                         Menu[i].Columns["price"].HeaderText = "料金";
+
+                        // 選択解除
+                        Menu[i].ClearSelection();
 
 
                     }
                 }
+                MenuDgv1.SelectionChanged += MenuDgv_SelectionChanged;
+                MenuDgv2.SelectionChanged += MenuDgv_SelectionChanged;
+                MenuDgv3.SelectionChanged += MenuDgv_SelectionChanged;
             }
+        }
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            MenuDgv1.ClearSelection();
+            MenuDgv2.ClearSelection();
+            MenuDgv3.ClearSelection();
+        }
+        private void MenuDgv_SelectionChanged(object sender, EventArgs e)
+        {
+            DataGridView current = sender as DataGridView;
+
+            if (!current.Focused)
+                return;
+
+            if (current != MenuDgv1)
+                MenuDgv1.ClearSelection();
+
+            if (current != MenuDgv2)
+                MenuDgv2.ClearSelection();
+
+            if (current != MenuDgv3)
+                MenuDgv3.ClearSelection();
         }
         private void SearchBtn_Click(object sender, EventArgs e)
         {

@@ -65,13 +65,14 @@
             // 
             // HomeBtn
             // 
+            this.HomeBtn.BackColor = System.Drawing.Color.LightPink;
             this.HomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.HomeBtn.Location = new System.Drawing.Point(37, 71);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(124, 54);
             this.HomeBtn.TabIndex = 0;
             this.HomeBtn.Text = "Home";
-            this.HomeBtn.UseVisualStyleBackColor = true;
+            this.HomeBtn.UseVisualStyleBackColor = false;
             // 
             // WeekLbl
             // 
