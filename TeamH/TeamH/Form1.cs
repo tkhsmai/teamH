@@ -21,6 +21,7 @@ namespace teamH
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            // 今日の曜日を取得　　todayWeekdayIdはweekday_idと対応
             int todayWeekdayId = (int)DateTime.Today.DayOfWeek;
             switch (DateTime.Today.DayOfWeek)
             {
@@ -48,7 +49,7 @@ namespace teamH
             PictureBox[] StorePic = { StorePicture1, StorePicture2, StorePicture3 };
             DataGridView[] Menu = { MenuDgv1, MenuDgv2, MenuDgv3 };
 
-
+            // 曜日ごとに表示する画像を切り替える
             switch (todayWeekdayId)
             {
                 case 1:
@@ -78,9 +79,6 @@ namespace teamH
                     break;
             }
 
-            StorePicture1.SizeMode = PictureBoxSizeMode.Zoom;
-            StorePicture2.SizeMode = PictureBoxSizeMode.Zoom;
-            StorePicture3.SizeMode = PictureBoxSizeMode.Zoom;
 
 
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
@@ -134,7 +132,15 @@ namespace teamH
                         adapter2.Fill(menuDt);
 
                         Menu[i].DataSource = menuDt;
-                            
+
+                        // DataGridViewの列幅を自動調整
+                        Menu[i].Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        Menu[i].Columns[1].Width = 55;
+
+                        // DataGridViewの１行目を「メニュー」と「価格」に変更する
+                        Menu[i].Columns["menu_name"].HeaderText = "メニュー";
+                        Menu[i].Columns["price"].HeaderText = "料金";
+
 
                     }
                 }
@@ -212,6 +218,5 @@ namespace teamH
             MessageBox.Show($"{menuName}を{weekdayName}の気に入りに追加しました！");
         }
 
-        
     }
 }
