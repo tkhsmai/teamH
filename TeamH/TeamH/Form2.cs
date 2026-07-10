@@ -15,6 +15,8 @@ namespace teamH
 {
     public partial class Form2 : Form
     {
+        private bool backToHome = false;
+
         public Form2()
         {
             InitializeComponent();
@@ -22,7 +24,11 @@ namespace teamH
         }
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            if (!backToHome)
+            {
+                // Home 以外（×ボタンなど）で閉じた場合はアプリ終了
+                Application.Exit();
+            }
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -67,9 +73,11 @@ namespace teamH
         private void BHomeBtn_Click(object sender, EventArgs e)
         {
 
-            Form1 form1 = (Form1)Application.OpenForms["Form1"];
+            backToHome = true;   // ← Home から閉じたことを記録
+
+            Form1 form1 = new Form1();
             form1.Show();
-            this.Close();
+            this.Close();        // ← Form2 を閉じる
 
         }
 
