@@ -314,6 +314,11 @@ namespace teamH
 
                     Menu[i].DataSource = menuDt;
                     Menu[i].Columns["menu_id"].Visible = false;
+
+                    Menu[i].AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+                    Menu[i].Columns["menu_name"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    Menu[i].Columns["price"].Width = 55;
+
                     Menu[i].Columns["menu_name"].HeaderText = "メニュー";
                     Menu[i].Columns["price"].HeaderText = "料金";
                     Menu[i].ClearSelection();
@@ -360,8 +365,8 @@ namespace teamH
                 (trygetGrid == MenuDgv2) ? menuIds2[rowIndex] :
                                            menuIds3[rowIndex];
 
-            // weekday_id は保持してある値を使う
-            int weekdayId = weekdayIds[index];
+            // store_id は保持してある値を使う
+            int storeId = weekdayIds[index];
             int price = Convert.ToInt32(trygetGrid.CurrentRow.Cells["price"].Value);
             using (SqlConnection conn = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
@@ -372,20 +377,20 @@ namespace teamH
                 sql.Append(" INSERT INTO ");
                 sql.Append(" favorite ( ");
                 sql.Append("  menu_id ");
-                sql.Append("  ,weekday_id ");
+                sql.Append("  ,store_id ");
                 sql.Append("  ,price ");
                 sql.Append(" ) ");
                 sql.Append(" VALUES ");
                 sql.Append(" ( ");
                 sql.Append(" @menu_id ");
-                sql.Append(" ,@weekday_id ");
+                sql.Append(" ,@store_id ");
                 sql.Append("  ,@price ");
                 sql.Append(" ) ");
                 cmd.CommandText = sql.ToString();
 
 
                 cmd.Parameters.Add("@menu_id", SqlDbType.Int).Value = menuId;
-                cmd.Parameters.Add("@weekday_id", SqlDbType.Int).Value = weekdayId;
+                cmd.Parameters.Add("@store_id", SqlDbType.Int).Value = storeId;
                 cmd.Parameters.Add("@price", SqlDbType.Int).Value = price;
 
                 conn.Open();

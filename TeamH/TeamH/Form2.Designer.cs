@@ -51,7 +51,7 @@
             // 
             this.RkMenuDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.RkMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RkMenuDgv.Location = new System.Drawing.Point(1117, 366);
+            this.RkMenuDgv.Location = new System.Drawing.Point(925, 366);
             this.RkMenuDgv.Margin = new System.Windows.Forms.Padding(2);
             this.RkMenuDgv.Name = "RkMenuDgv";
             this.RkMenuDgv.RowHeadersWidth = 62;
@@ -64,7 +64,7 @@
             // 
             this.FavoriteLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FavoriteLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.FavoriteLbl.Location = new System.Drawing.Point(641, 310);
+            this.FavoriteLbl.Location = new System.Drawing.Point(453, 310);
             this.FavoriteLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FavoriteLbl.MaximumSize = new System.Drawing.Size(500, 500);
             this.FavoriteLbl.Name = "FavoriteLbl";
@@ -76,7 +76,7 @@
             // 
             this.RankingLbl.AutoSize = true;
             this.RankingLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.RankingLbl.Location = new System.Drawing.Point(1214, 310);
+            this.RankingLbl.Location = new System.Drawing.Point(1007, 310);
             this.RankingLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RankingLbl.MaximumSize = new System.Drawing.Size(400, 417);
             this.RankingLbl.Name = "RankingLbl";
@@ -89,7 +89,7 @@
             this.FvMenuDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.FvMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FvMenuDgv.GridColor = System.Drawing.Color.FloralWhite;
-            this.FvMenuDgv.Location = new System.Drawing.Point(514, 366);
+            this.FvMenuDgv.Location = new System.Drawing.Point(322, 366);
             this.FvMenuDgv.Name = "FvMenuDgv";
             this.FvMenuDgv.RowHeadersWidth = 51;
             this.FvMenuDgv.RowTemplate.Height = 24;
@@ -99,7 +99,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::teamH.Properties.Resources.kichinavi_logo_textonly;
-            this.pictureBox1.Location = new System.Drawing.Point(755, -114);
+            this.pictureBox1.Location = new System.Drawing.Point(555, -117);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(804, 424);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
