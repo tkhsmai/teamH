@@ -20,16 +20,17 @@ namespace teamH
         public Form2()
         {
             InitializeComponent();
-          
+            this.FormClosing += Form2_FormClosing;
+
         }
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!backToHome)
             {
-                // Home 以外（×ボタンなど）で閉じた場合はアプリ終了
-                Application.Exit();
+                Application.Exit();   // ×ボタンで閉じたときだけ終了
             }
         }
+
         private void Form2_Load(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))

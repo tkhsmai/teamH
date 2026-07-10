@@ -33,6 +33,10 @@ namespace teamH
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            MenuDgv1.ReadOnly = true;
+            MenuDgv2.ReadOnly = true;
+            MenuDgv3.ReadOnly = true;
+
             // 今日の曜日を取得　　todayWeekdayIdはweekday_idと対応
             int todayWeekdayId = (int)DateTime.Today.DayOfWeek;
             switch (DateTime.Today.DayOfWeek)
