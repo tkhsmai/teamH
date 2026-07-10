@@ -23,6 +23,7 @@
 
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BHomeBtn = new System.Windows.Forms.Button();
             this.RkMenuDgv = new System.Windows.Forms.DataGridView();
             this.FavoriteLbl = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.RkMenuDgv.RowTemplate.Height = 27;
             this.RkMenuDgv.Size = new System.Drawing.Size(454, 445);
             this.RkMenuDgv.TabIndex = 2;
-            this.RkMenuDgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RkMenuDgv_CellContentClick);
             // 
             // FavoriteLbl
             // 
@@ -86,11 +86,21 @@
             // 
             // FvMenuDgv
             // 
+            this.FvMenuDgv.AllowUserToAddRows = false;
             this.FvMenuDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FvMenuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.FvMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FvMenuDgv.GridColor = System.Drawing.Color.FloralWhite;
             this.FvMenuDgv.Location = new System.Drawing.Point(322, 366);
             this.FvMenuDgv.Name = "FvMenuDgv";
+            this.FvMenuDgv.RowHeadersVisible = false;
             this.FvMenuDgv.RowHeadersWidth = 51;
             this.FvMenuDgv.RowTemplate.Height = 24;
             this.FvMenuDgv.Size = new System.Drawing.Size(598, 442);
@@ -123,6 +133,7 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RkMenuDgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FvMenuDgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
