@@ -153,6 +153,10 @@ namespace teamH
                         Menu[i].DataSource = menuDt;
                         Menu[i].Columns["menu_id"].Visible = false;
 
+                        Menu[i].AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+                        Menu[i].Columns["menu_name"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        Menu[i].Columns["price"].Width = 55;
+
 
                         Menu[i].Columns["menu_name"].HeaderText = "メニュー";
                         Menu[i].Columns["price"].HeaderText = "料金";
