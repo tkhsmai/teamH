@@ -273,6 +273,7 @@ namespace teamH
                 for (int i = 0; i < storeDt.Rows.Count && i < 3; i++)
                 {
                     int storeId = Convert.ToInt32(storeDt.Rows[i]["store_id"]);
+                    storeIds[i] = storeId;
 
                     StoreLbl[i].Text = storeDt.Rows[i]["store_name"].ToString();
 
