@@ -21,7 +21,6 @@ namespace teamH
         private int[] menuIds2;
         private int[] menuIds3;
 
-        private int[] weekdayIds = new int[3];
         private int[] storeIds = new int[3];
 
 
@@ -127,6 +126,9 @@ namespace teamH
                     // 店名をラベルに表示
                     StoreLbl[i].Text = row["store_name"].ToString();
                     int storeId = Convert.ToInt32(row["store_id"]);
+
+                    storeIds[i] = storeId;
+
 
                     StringBuilder menusql = new StringBuilder();
                     menusql.Append("SELECT");
@@ -366,7 +368,7 @@ namespace teamH
                                            menuIds3[rowIndex];
 
             // store_id は保持してある値を使う
-            int storeId = weekdayIds[index];
+            int storeId = storeIds[index];
             int price = Convert.ToInt32(trygetGrid.CurrentRow.Cells["price"].Value);
             using (SqlConnection conn = new SqlConnection(
                 ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
