@@ -197,10 +197,126 @@ namespace teamH
             current.Rows[e.RowIndex].Selected = true; // ← クリック行だけ青くする
         }
 
-        private void SearchBtn_Click(object sender, EventArgs e)
+            private void SearchBtn_Click(object sender, EventArgs e)
         {
+            Label[] StoreLbl = { StoreLbl1, StoreLbl2, StoreLbl3 };
+            PictureBox[] StorePic = { StorePicture1, StorePicture2, StorePicture3 };
+            DataGridView[] Menu = { MenuDgv1, MenuDgv2, MenuDgv3 };
 
-        }
+            // 初期化
+            for (int i = 0; i < 3; i++)
+            {
+                StoreLbl[i].Text = "";
+                StorePic[i].Image = null;
+                Menu[i].DataSource = null;
+            }
+
+            using (SqlConnection conn = new SqlConnection(
+                ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
+            {
+                conn.Open();
+
+                StringBuilder sql = new StringBuilder();
+
+                sql.Append("SELECT DISTINCT ");
+                sql.Append(" s.store_id,");
+                sql.Append(" s.store_name ");
+                sql.Append("FROM Store s ");
+                sql.Append("INNER JOIN StoreWeekday sw ");
+                sql.Append(" ON s.store_id = sw.store_id ");
+                sql.Append("INNER JOIN Weekday w ");
+                sql.Append(" ON sw.weekday_id = w.weekday_id ");
+                sql.Append("LEFT JOIN Menu m ");
+                sql.Append(" ON s.store_id = m.store_id ");
+                sql.Append("WHERE 1=1 ");
+
+                if (StoreCbx.Text != "")
+                    sql.Append(" AND s.store_name=@store ");
+
+                if (WeekCbx.Text != "")
+                    sql.Append(" AND w.weekday=@week ");
+
+                if (MenuTbx.Text != "")
+                    sql.Append(" AND m.menu_name LIKE '%' + @menu + '%' ");
+
+                SqlCommand cmd = new SqlCommand(sql.ToString(), conn);
+
+                if (StoreCbx.Text != "")
+                    cmd.Parameters.Add("@store", SqlDbType.NVarChar).Value = StoreCbx.Text;
+
+                if (WeekCbx.Text != "")
+                    cmd.Parameters.Add("@week", SqlDbType.NChar).Value = WeekCbx.Text;
+
+                if (MenuTbx.Text != "")
+                    cmd.Parameters.Add("@menu", SqlDbType.NVarChar).Value = MenuTbx.Text;
+
+                DataTable storeDt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(storeDt);
+
+                if (storeDt.Rows.Count == 0)
+                {
+                    MessageBox.Show("検索結果がありません。");
+                    return;
+                }
+
+                for (int i = 0; i < storeDt.Rows.Count && i < 3; i++)
+                {
+                    int storeId = Convert.ToInt32(storeDt.Rows[i]["store_id"]);
+
+                    StoreLbl[i].Text = storeDt.Rows[i]["store_name"].ToString();
+
+                    // 画像表示
+                    switch (storeId)
+                    {
+                        case 1:
+                            StorePic[i].Image = Properties.Resources.store1;
+                            break;
+                        case 2:
+                            StorePic[i].Image = Properties.Resources.store2;
+                            break;
+                        case 3:
+                            StorePic[i].Image = Properties.Resources.store3;
+                            break;
+                        case 4:
+                            StorePic[i].Image = Properties.Resources.store4;
+                            break;
+                        case 5:
+                            StorePic[i].Image = Properties.Resources.store5;
+                            break;
+                        case 6:
+                            StorePic[i].Image = Properties.Resources.store6;
+                            break;
+                    }
+
+                    // メニュー取得
+                    StringBuilder menuSql = new StringBuilder();
+                    menuSql.Append("SELECT menu_id, menu_name, price ");
+                    menuSql.Append("FROM Menu ");
+                    menuSql.Append("WHERE store_id=@store_id ");
+
+                    if (MenuTbx.Text != "")
+                        menuSql.Append("AND menu_name LIKE '%' + @menu + '%' ");
+
+                    SqlCommand cmd2 = new SqlCommand(menuSql.ToString(), conn);
+                    cmd2.Parameters.Add("@store_id", SqlDbType.Int).Value = storeId;
+
+                    if (MenuTbx.Text != "")
+                        cmd2.Parameters.Add("@menu", SqlDbType.NVarChar).Value = MenuTbx.Text;
+
+                    DataTable menuDt = new DataTable();
+                    SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
+                    da2.Fill(menuDt);
+
+                    Menu[i].DataSource = menuDt;
+                    Menu[i].Columns["menu_id"].Visible = false;
+                    Menu[i].Columns["menu_name"].HeaderText = "メニュー";
+                    Menu[i].Columns["price"].HeaderText = "料金";
+                    Menu[i].ClearSelection();
+                }
+            }
+    }
+        
 
         private void FavoriteBtn_Click(object sender, EventArgs e)
         {
