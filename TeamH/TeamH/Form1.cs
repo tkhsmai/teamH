@@ -167,6 +167,10 @@ namespace teamH
                             if (i == 1) menuIds2[r] = menuId;
                             if (i == 2) menuIds3[r] = menuId;
                         }
+                        MenuDgv1.CellClick += MenuDgv_CellClick;
+                        MenuDgv2.CellClick += MenuDgv_CellClick;
+                        MenuDgv3.CellClick += MenuDgv_CellClick;
+
                     }
 
                 }
@@ -179,22 +183,20 @@ namespace teamH
             MenuDgv2.ClearSelection();
             MenuDgv3.ClearSelection();
         }
-        private void MenuDgv_SelectionChanged(object sender, EventArgs e)
+        private void MenuDgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridView current = sender as DataGridView;
 
-            if (!current.Focused)
-                return;
+            // 他のグリッドの選択を解除
+            if (current != MenuDgv1) MenuDgv1.ClearSelection();
+            if (current != MenuDgv2) MenuDgv2.ClearSelection();
+            if (current != MenuDgv3) MenuDgv3.ClearSelection();
 
-            if (current != MenuDgv1)
-                MenuDgv1.ClearSelection();
-
-            if (current != MenuDgv2)
-                MenuDgv2.ClearSelection();
-
-            if (current != MenuDgv3)
-                MenuDgv3.ClearSelection();
+            // クリックされた行だけ選択
+            current.ClearSelection();                 // ← まず全部解除
+            current.Rows[e.RowIndex].Selected = true; // ← クリック行だけ青くする
         }
+
         private void SearchBtn_Click(object sender, EventArgs e)
         {
 
