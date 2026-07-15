@@ -23,7 +23,7 @@
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BHomeBtn = new System.Windows.Forms.Button();
             this.RkMenuDgv = new System.Windows.Forms.DataGridView();
             this.FavoriteLbl = new System.Windows.Forms.Label();
@@ -39,10 +39,10 @@
             // 
             this.BHomeBtn.BackColor = System.Drawing.Color.OldLace;
             this.BHomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.BHomeBtn.Location = new System.Drawing.Point(37, 71);
+            this.BHomeBtn.Location = new System.Drawing.Point(46, 85);
             this.BHomeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.BHomeBtn.Name = "BHomeBtn";
-            this.BHomeBtn.Size = new System.Drawing.Size(124, 54);
+            this.BHomeBtn.Size = new System.Drawing.Size(155, 65);
             this.BHomeBtn.TabIndex = 0;
             this.BHomeBtn.Text = "Home";
             this.BHomeBtn.UseVisualStyleBackColor = false;
@@ -52,23 +52,23 @@
             // 
             this.RkMenuDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.RkMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RkMenuDgv.Location = new System.Drawing.Point(925, 366);
+            this.RkMenuDgv.Location = new System.Drawing.Point(1156, 439);
             this.RkMenuDgv.Margin = new System.Windows.Forms.Padding(2);
             this.RkMenuDgv.Name = "RkMenuDgv";
             this.RkMenuDgv.RowHeadersWidth = 62;
             this.RkMenuDgv.RowTemplate.Height = 27;
-            this.RkMenuDgv.Size = new System.Drawing.Size(454, 445);
+            this.RkMenuDgv.Size = new System.Drawing.Size(568, 534);
             this.RkMenuDgv.TabIndex = 2;
             // 
             // FavoriteLbl
             // 
             this.FavoriteLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FavoriteLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.FavoriteLbl.Location = new System.Drawing.Point(453, 310);
+            this.FavoriteLbl.Location = new System.Drawing.Point(566, 372);
             this.FavoriteLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.FavoriteLbl.MaximumSize = new System.Drawing.Size(500, 500);
+            this.FavoriteLbl.MaximumSize = new System.Drawing.Size(625, 600);
             this.FavoriteLbl.Name = "FavoriteLbl";
-            this.FavoriteLbl.Size = new System.Drawing.Size(500, 49);
+            this.FavoriteLbl.Size = new System.Drawing.Size(625, 59);
             this.FavoriteLbl.TabIndex = 3;
             this.FavoriteLbl.Text = "お気に入りメニュー";
             // 
@@ -76,11 +76,11 @@
             // 
             this.RankingLbl.AutoSize = true;
             this.RankingLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.RankingLbl.Location = new System.Drawing.Point(1007, 310);
+            this.RankingLbl.Location = new System.Drawing.Point(1259, 372);
             this.RankingLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.RankingLbl.MaximumSize = new System.Drawing.Size(400, 417);
+            this.RankingLbl.MaximumSize = new System.Drawing.Size(500, 500);
             this.RankingLbl.Name = "RankingLbl";
-            this.RankingLbl.Size = new System.Drawing.Size(260, 34);
+            this.RankingLbl.Size = new System.Drawing.Size(304, 40);
             this.RankingLbl.TabIndex = 4;
             this.RankingLbl.Text = "人気ランキング";
             // 
@@ -88,40 +88,43 @@
             // 
             this.FvMenuDgv.AllowUserToAddRows = false;
             this.FvMenuDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FvMenuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FvMenuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.FvMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FvMenuDgv.GridColor = System.Drawing.Color.FloralWhite;
-            this.FvMenuDgv.Location = new System.Drawing.Point(322, 366);
+            this.FvMenuDgv.Location = new System.Drawing.Point(402, 439);
+            this.FvMenuDgv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FvMenuDgv.Name = "FvMenuDgv";
             this.FvMenuDgv.RowHeadersVisible = false;
             this.FvMenuDgv.RowHeadersWidth = 51;
             this.FvMenuDgv.RowTemplate.Height = 24;
-            this.FvMenuDgv.Size = new System.Drawing.Size(598, 442);
+            this.FvMenuDgv.Size = new System.Drawing.Size(748, 530);
             this.FvMenuDgv.TabIndex = 5;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::teamH.Properties.Resources.kichinavi_logo_textonly;
-            this.pictureBox1.Location = new System.Drawing.Point(555, -117);
+            this.pictureBox1.Location = new System.Drawing.Point(694, -140);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(804, 424);
+            this.pictureBox1.Size = new System.Drawing.Size(1005, 509);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1924, 904);
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.FvMenuDgv);
             this.Controls.Add(this.BHomeBtn);
