@@ -23,7 +23,11 @@
 
         private void InitializeComponent()
         {
+<<<<<<< Updated upstream
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+>>>>>>> Stashed changes
             this.BHomeBtn = new System.Windows.Forms.Button();
             this.RkMenuDgv = new System.Windows.Forms.DataGridView();
             this.FavoriteLbl = new System.Windows.Forms.Label();
@@ -38,8 +42,13 @@
             // BHomeBtn
             // 
             this.BHomeBtn.BackColor = System.Drawing.Color.OldLace;
+<<<<<<< Updated upstream
             this.BHomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BHomeBtn.Location = new System.Drawing.Point(46, 85);
+=======
+            this.BHomeBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BHomeBtn.Location = new System.Drawing.Point(37, 71);
+>>>>>>> Stashed changes
             this.BHomeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.BHomeBtn.Name = "BHomeBtn";
             this.BHomeBtn.Size = new System.Drawing.Size(155, 65);
@@ -88,6 +97,7 @@
             // 
             this.FvMenuDgv.AllowUserToAddRows = false;
             this.FvMenuDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
+<<<<<<< Updated upstream
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -96,6 +106,16 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.FvMenuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+=======
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FvMenuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+>>>>>>> Stashed changes
             this.FvMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FvMenuDgv.GridColor = System.Drawing.Color.FloralWhite;
             this.FvMenuDgv.Location = new System.Drawing.Point(402, 439);

@@ -39,12 +39,14 @@
             this.MenuAddTbx = new System.Windows.Forms.TextBox();
             this.PriceAddTbx = new System.Windows.Forms.TextBox();
             this.AddGbx = new System.Windows.Forms.GroupBox();
+            this.PassBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteAddDgv)).BeginInit();
             this.AddGbx.SuspendLayout();
             this.SuspendLayout();
             // 
             // BHomeBtn2
             // 
+            this.BHomeBtn2.BackColor = System.Drawing.Color.OldLace;
             this.BHomeBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BHomeBtn2.Location = new System.Drawing.Point(53, 67);
             this.BHomeBtn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -52,7 +54,7 @@
             this.BHomeBtn2.Size = new System.Drawing.Size(152, 62);
             this.BHomeBtn2.TabIndex = 0;
             this.BHomeBtn2.Text = "Home";
-            this.BHomeBtn2.UseVisualStyleBackColor = true;
+            this.BHomeBtn2.UseVisualStyleBackColor = false;
             // 
             // StoreCbx2
             // 
@@ -110,11 +112,11 @@
             // 
             // DeleteBtn
             // 
-            this.DeleteBtn.Location = new System.Drawing.Point(196, 299);
+            this.DeleteBtn.Location = new System.Drawing.Point(261, 311);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(75, 23);
+            this.DeleteBtn.Size = new System.Drawing.Size(102, 45);
             this.DeleteBtn.TabIndex = 11;
-            this.DeleteBtn.Text = "button1";
+            this.DeleteBtn.Text = "削除";
             this.DeleteBtn.UseVisualStyleBackColor = true;
             // 
             // AddBtn
@@ -123,7 +125,7 @@
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(75, 23);
             this.AddBtn.TabIndex = 12;
-            this.AddBtn.Text = "button2";
+            this.AddBtn.Text = "追加";
             this.AddBtn.UseVisualStyleBackColor = true;
             // 
             // MenuAddTbx
@@ -150,13 +152,24 @@
             this.AddGbx.Size = new System.Drawing.Size(303, 161);
             this.AddGbx.TabIndex = 15;
             this.AddGbx.TabStop = false;
-            this.AddGbx.Text = "groupBox1";
+            this.AddGbx.Text = "メニュー追加";
+            // 
+            // PassBtn
+            // 
+            this.PassBtn.Location = new System.Drawing.Point(647, 107);
+            this.PassBtn.Name = "PassBtn";
+            this.PassBtn.Size = new System.Drawing.Size(93, 29);
+            this.PassBtn.TabIndex = 16;
+            this.PassBtn.Text = "OK";
+            this.PassBtn.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(1435, 776);
+            this.Controls.Add(this.PassBtn);
             this.Controls.Add(this.AddGbx);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.PassLbl);
@@ -189,5 +202,6 @@
         private System.Windows.Forms.TextBox MenuAddTbx;
         private System.Windows.Forms.TextBox PriceAddTbx;
         private System.Windows.Forms.GroupBox AddGbx;
+        private System.Windows.Forms.Button PassBtn;
     }
 }
