@@ -16,9 +16,11 @@ namespace teamH
 {
     public partial class Form3 : Form
     {
+        private bool backToHome = false;
         public Form3()
         {
             InitializeComponent();
+            this.FormClosing += Form3_FormClosing;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -170,9 +172,49 @@ namespace teamH
             // 削除後に一覧を再読み込み
             LoadMenuList();
         }
-        
+
+        private void BHomeBtn2_Click(object sender, EventArgs e)
+        {
+            backToHome = true;   // ← Home から閉じたことを記録
+
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Close();        // ← Form3 を閉じる
+        }
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!backToHome)
+            {
+                Application.Exit();   // ×ボタンで閉じたときだけ終了
+            }
+        }
+
+
+        private void PassBtn_Click(object sender, EventArgs e)
+        {
+            string inputPassword = PassTbx.Text;
+
+            // 正しいパスワード（あなたが決める）
+            string correctPassword = "1234";
+
+            if (inputPassword == correctPassword)
+            {
+                MessageBox.Show("ログイン成功！");
+                // 次の画面へ進む
+                Form3 form3 = new Form3();
+                form3.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("パスワードが違います");
+                PassTbx.Clear();
+            }
+        }
+
     }
 }
+
 
 
 
