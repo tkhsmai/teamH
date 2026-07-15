@@ -63,36 +63,6 @@ namespace teamH.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap Copilot_20260715_121253 {
-            get {
-                object obj = ResourceManager.GetObject("Copilot_20260715_121253", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap Copilot_20260715_1212531 {
-            get {
-                object obj = ResourceManager.GetObject("Copilot_20260715_1212531", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap Copilot_20260715_122712 {
-            get {
-                object obj = ResourceManager.GetObject("Copilot_20260715_122712", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap kichinavi_logo_textonly {
             get {
                 object obj = ResourceManager.GetObject("kichinavi_logo_textonly", resourceCulture);
