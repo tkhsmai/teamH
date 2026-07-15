@@ -102,5 +102,11 @@
   <ItemGroup>
     <None Include="Resources\kichinavi_logo_textonly.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20260715_121253.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20260715_122712.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
