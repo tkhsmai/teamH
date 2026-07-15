@@ -31,34 +31,37 @@
             this.BHomeBtn2 = new System.Windows.Forms.Button();
             this.StoreCbx2 = new System.Windows.Forms.ComboBox();
             this.StoreLbl2 = new System.Windows.Forms.Label();
-            this.DeleteAddDgv = new System.Windows.Forms.DataGridView();
             this.PassTbx = new System.Windows.Forms.TextBox();
             this.PassLbl = new System.Windows.Forms.Label();
-            this.DeleteBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.MenuAddTbx = new System.Windows.Forms.TextBox();
             this.PriceAddTbx = new System.Windows.Forms.TextBox();
             this.AddGbx = new System.Windows.Forms.GroupBox();
+            this.PriceLbl = new System.Windows.Forms.Label();
+            this.MenuLbl2 = new System.Windows.Forms.Label();
             this.PassBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DeleteAddDgv)).BeginInit();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.DeleteAddDgv = new System.Windows.Forms.DataGridView();
+            this.SearchBtn2 = new System.Windows.Forms.Button();
             this.AddGbx.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DeleteAddDgv)).BeginInit();
             this.SuspendLayout();
             // 
             // BHomeBtn2
             // 
             this.BHomeBtn2.BackColor = System.Drawing.Color.OldLace;
-            this.BHomeBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.BHomeBtn2.Location = new System.Drawing.Point(53, 67);
-            this.BHomeBtn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BHomeBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BHomeBtn2.Location = new System.Drawing.Point(60, 59);
+            this.BHomeBtn2.Margin = new System.Windows.Forms.Padding(2);
             this.BHomeBtn2.Name = "BHomeBtn2";
-            this.BHomeBtn2.Size = new System.Drawing.Size(152, 62);
+            this.BHomeBtn2.Size = new System.Drawing.Size(124, 54);
             this.BHomeBtn2.TabIndex = 0;
             this.BHomeBtn2.Text = "Home";
             this.BHomeBtn2.UseVisualStyleBackColor = false;
             // 
             // StoreCbx2
             // 
-            this.StoreCbx2.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreCbx2.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreCbx2.FormattingEnabled = true;
             this.StoreCbx2.Items.AddRange(new object[] {
             "スマイルバーガー号",
@@ -67,35 +70,25 @@
             "クレープスマイル",
             "たこ丸キッチン",
             "ソウルキッチン号"});
-            this.StoreCbx2.Location = new System.Drawing.Point(173, 207);
+            this.StoreCbx2.Location = new System.Drawing.Point(248, 223);
             this.StoreCbx2.Name = "StoreCbx2";
-            this.StoreCbx2.Size = new System.Drawing.Size(203, 28);
+            this.StoreCbx2.Size = new System.Drawing.Size(219, 31);
             this.StoreCbx2.TabIndex = 6;
             // 
             // StoreLbl2
             // 
             this.StoreLbl2.AutoSize = true;
-            this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.StoreLbl2.Location = new System.Drawing.Point(53, 207);
+            this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl2.Location = new System.Drawing.Point(138, 225);
             this.StoreLbl2.Name = "StoreLbl2";
-            this.StoreLbl2.Size = new System.Drawing.Size(58, 23);
+            this.StoreLbl2.Size = new System.Drawing.Size(64, 25);
             this.StoreLbl2.TabIndex = 7;
             this.StoreLbl2.Text = "店名";
-            // 
-            // DeleteAddDgv
-            // 
-            this.DeleteAddDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DeleteAddDgv.Location = new System.Drawing.Point(448, 211);
-            this.DeleteAddDgv.Name = "DeleteAddDgv";
-            this.DeleteAddDgv.RowHeadersWidth = 51;
-            this.DeleteAddDgv.RowTemplate.Height = 24;
-            this.DeleteAddDgv.Size = new System.Drawing.Size(782, 526);
-            this.DeleteAddDgv.TabIndex = 8;
             // 
             // PassTbx
             // 
             this.PassTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.PassTbx.Location = new System.Drawing.Point(331, 107);
+            this.PassTbx.Location = new System.Drawing.Point(335, 102);
             this.PassTbx.Name = "PassTbx";
             this.PassTbx.Size = new System.Drawing.Size(280, 30);
             this.PassTbx.TabIndex = 9;
@@ -103,87 +96,144 @@
             // PassLbl
             // 
             this.PassLbl.AutoSize = true;
-            this.PassLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.PassLbl.Location = new System.Drawing.Point(328, 73);
+            this.PassLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PassLbl.Location = new System.Drawing.Point(331, 59);
             this.PassLbl.Name = "PassLbl";
-            this.PassLbl.Size = new System.Drawing.Size(260, 18);
+            this.PassLbl.Size = new System.Drawing.Size(318, 22);
             this.PassLbl.TabIndex = 10;
             this.PassLbl.Text = "パスワードを入力してください";
             // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.Location = new System.Drawing.Point(261, 311);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(102, 45);
-            this.DeleteBtn.TabIndex = 11;
-            this.DeleteBtn.Text = "削除";
-            this.DeleteBtn.UseVisualStyleBackColor = true;
-            // 
             // AddBtn
             // 
-            this.AddBtn.Location = new System.Drawing.Point(189, 38);
+            this.AddBtn.BackColor = System.Drawing.Color.OldLace;
+            this.AddBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.AddBtn.Location = new System.Drawing.Point(342, 131);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(75, 23);
+            this.AddBtn.Size = new System.Drawing.Size(97, 48);
             this.AddBtn.TabIndex = 12;
             this.AddBtn.Text = "追加";
-            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.UseVisualStyleBackColor = false;
             // 
             // MenuAddTbx
             // 
-            this.MenuAddTbx.Location = new System.Drawing.Point(60, 42);
+            this.MenuAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MenuAddTbx.Location = new System.Drawing.Point(160, 51);
             this.MenuAddTbx.Name = "MenuAddTbx";
-            this.MenuAddTbx.Size = new System.Drawing.Size(100, 22);
+            this.MenuAddTbx.Size = new System.Drawing.Size(175, 30);
             this.MenuAddTbx.TabIndex = 13;
             // 
             // PriceAddTbx
             // 
-            this.PriceAddTbx.Location = new System.Drawing.Point(51, 106);
+            this.PriceAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PriceAddTbx.Location = new System.Drawing.Point(160, 141);
             this.PriceAddTbx.Name = "PriceAddTbx";
-            this.PriceAddTbx.Size = new System.Drawing.Size(100, 22);
+            this.PriceAddTbx.Size = new System.Drawing.Size(137, 30);
             this.PriceAddTbx.TabIndex = 14;
             // 
             // AddGbx
             // 
+            this.AddGbx.Controls.Add(this.PriceLbl);
+            this.AddGbx.Controls.Add(this.MenuLbl2);
             this.AddGbx.Controls.Add(this.PriceAddTbx);
             this.AddGbx.Controls.Add(this.MenuAddTbx);
             this.AddGbx.Controls.Add(this.AddBtn);
-            this.AddGbx.Location = new System.Drawing.Point(72, 382);
+            this.AddGbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.AddGbx.Location = new System.Drawing.Point(143, 411);
             this.AddGbx.Name = "AddGbx";
-            this.AddGbx.Size = new System.Drawing.Size(303, 161);
+            this.AddGbx.Size = new System.Drawing.Size(465, 206);
             this.AddGbx.TabIndex = 15;
             this.AddGbx.TabStop = false;
             this.AddGbx.Text = "メニュー追加";
             // 
+            // PriceLbl
+            // 
+            this.PriceLbl.AutoSize = true;
+            this.PriceLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PriceLbl.Location = new System.Drawing.Point(26, 142);
+            this.PriceLbl.Name = "PriceLbl";
+            this.PriceLbl.Size = new System.Drawing.Size(58, 23);
+            this.PriceLbl.TabIndex = 16;
+            this.PriceLbl.Text = "値段";
+            // 
+            // MenuLbl2
+            // 
+            this.MenuLbl2.AutoSize = true;
+            this.MenuLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MenuLbl2.Location = new System.Drawing.Point(26, 58);
+            this.MenuLbl2.Name = "MenuLbl2";
+            this.MenuLbl2.Size = new System.Drawing.Size(106, 23);
+            this.MenuLbl2.TabIndex = 15;
+            this.MenuLbl2.Text = "メニュー";
+            // 
             // PassBtn
             // 
-            this.PassBtn.Location = new System.Drawing.Point(647, 107);
+            this.PassBtn.BackColor = System.Drawing.Color.OldLace;
+            this.PassBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PassBtn.Location = new System.Drawing.Point(660, 102);
             this.PassBtn.Name = "PassBtn";
-            this.PassBtn.Size = new System.Drawing.Size(93, 29);
+            this.PassBtn.Size = new System.Drawing.Size(63, 30);
             this.PassBtn.TabIndex = 16;
             this.PassBtn.Text = "OK";
-            this.PassBtn.UseVisualStyleBackColor = true;
+            this.PassBtn.UseVisualStyleBackColor = false;
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.OldLace;
+            this.DeleteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.DeleteBtn.Location = new System.Drawing.Point(1123, 737);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(97, 51);
+            this.DeleteBtn.TabIndex = 11;
+            this.DeleteBtn.Text = "削除";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            // 
+            // DeleteAddDgv
+            // 
+            this.DeleteAddDgv.AllowUserToAddRows = false;
+            this.DeleteAddDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DeleteAddDgv.Location = new System.Drawing.Point(771, 225);
+            this.DeleteAddDgv.Name = "DeleteAddDgv";
+            this.DeleteAddDgv.RowHeadersVisible = false;
+            this.DeleteAddDgv.RowHeadersWidth = 51;
+            this.DeleteAddDgv.RowTemplate.Height = 24;
+            this.DeleteAddDgv.Size = new System.Drawing.Size(770, 462);
+            this.DeleteAddDgv.TabIndex = 8;
+            // 
+            // SearchBtn2
+            // 
+            this.SearchBtn2.BackColor = System.Drawing.Color.OldLace;
+            this.SearchBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SearchBtn2.Location = new System.Drawing.Point(368, 290);
+            this.SearchBtn2.Name = "SearchBtn2";
+            this.SearchBtn2.Size = new System.Drawing.Size(98, 46);
+            this.SearchBtn2.TabIndex = 17;
+            this.SearchBtn2.Text = "検索";
+            this.SearchBtn2.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1435, 776);
+            this.ClientSize = new System.Drawing.Size(1839, 919);
+            this.Controls.Add(this.SearchBtn2);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.DeleteAddDgv);
             this.Controls.Add(this.PassBtn);
             this.Controls.Add(this.AddGbx);
-            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.PassLbl);
             this.Controls.Add(this.PassTbx);
-            this.Controls.Add(this.DeleteAddDgv);
             this.Controls.Add(this.StoreLbl2);
             this.Controls.Add(this.StoreCbx2);
             this.Controls.Add(this.BHomeBtn2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3";
             this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.DeleteAddDgv)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.AddGbx.ResumeLayout(false);
             this.AddGbx.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DeleteAddDgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,14 +244,17 @@
         private System.Windows.Forms.Button BHomeBtn2;
         private System.Windows.Forms.ComboBox StoreCbx2;
         private System.Windows.Forms.Label StoreLbl2;
-        private System.Windows.Forms.DataGridView DeleteAddDgv;
         private System.Windows.Forms.TextBox PassTbx;
         private System.Windows.Forms.Label PassLbl;
-        private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.TextBox MenuAddTbx;
         private System.Windows.Forms.TextBox PriceAddTbx;
         private System.Windows.Forms.GroupBox AddGbx;
         private System.Windows.Forms.Button PassBtn;
+        private System.Windows.Forms.Label PriceLbl;
+        private System.Windows.Forms.Label MenuLbl2;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.DataGridView DeleteAddDgv;
+        private System.Windows.Forms.Button SearchBtn2;
     }
 }
