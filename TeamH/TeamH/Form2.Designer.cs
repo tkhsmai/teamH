@@ -58,29 +58,30 @@
             this.RkMenuDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.RkMenuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.RkMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RkMenuDgv.ColumnHeadersHeight = 50;
+            this.RkMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SaddleBrown;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.RkMenuDgv.DefaultCellStyle = dataGridViewCellStyle2;
-            this.RkMenuDgv.Location = new System.Drawing.Point(841, 305);
+            this.RkMenuDgv.Location = new System.Drawing.Point(928, 305);
             this.RkMenuDgv.Margin = new System.Windows.Forms.Padding(2);
             this.RkMenuDgv.Name = "RkMenuDgv";
             this.RkMenuDgv.RowHeadersWidth = 51;
             this.RkMenuDgv.RowTemplate.Height = 27;
             this.RkMenuDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.RkMenuDgv.ShowCellToolTips = false;
-            this.RkMenuDgv.Size = new System.Drawing.Size(594, 209);
+            this.RkMenuDgv.Size = new System.Drawing.Size(890, 353);
             this.RkMenuDgv.TabIndex = 2;
             // 
             // FavoriteLbl
@@ -99,7 +100,7 @@
             // 
             this.RankingLbl.AutoSize = true;
             this.RankingLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.RankingLbl.Location = new System.Drawing.Point(989, 258);
+            this.RankingLbl.Location = new System.Drawing.Point(1243, 260);
             this.RankingLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RankingLbl.MaximumSize = new System.Drawing.Size(400, 417);
             this.RankingLbl.Name = "RankingLbl";
@@ -119,7 +120,8 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.FvMenuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.FvMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FvMenuDgv.ColumnHeadersHeight = 50;
+            this.FvMenuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -129,12 +131,12 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.FvMenuDgv.DefaultCellStyle = dataGridViewCellStyle4;
             this.FvMenuDgv.GridColor = System.Drawing.Color.FloralWhite;
-            this.FvMenuDgv.Location = new System.Drawing.Point(318, 305);
+            this.FvMenuDgv.Location = new System.Drawing.Point(146, 305);
             this.FvMenuDgv.Name = "FvMenuDgv";
             this.FvMenuDgv.RowHeadersVisible = false;
             this.FvMenuDgv.RowHeadersWidth = 51;
             this.FvMenuDgv.RowTemplate.Height = 24;
-            this.FvMenuDgv.Size = new System.Drawing.Size(481, 474);
+            this.FvMenuDgv.Size = new System.Drawing.Size(777, 474);
             this.FvMenuDgv.TabIndex = 5;
             // 
             // pictureBox1

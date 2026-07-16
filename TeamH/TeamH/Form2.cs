@@ -88,11 +88,19 @@ namespace teamH
             FvMenuDgv.DefaultCellStyle.SelectionForeColor = Color.Black;
             FvMenuDgv.GridColor = Color.Gray;
             FvMenuDgv.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-            FvMenuDgv.Columns["店名"].Width = 180;
-            FvMenuDgv.Columns["メニュー"].Width = 180;
-            FvMenuDgv.Columns["価格"].Width = 80;
+            FvMenuDgv.Columns["店名"].Width = 200;
+            FvMenuDgv.Columns["メニュー"].Width = 300;
+            FvMenuDgv.Columns["価格"].Width = 100; 
             FvMenuDgv.RowTemplate.Height = 35;
-            foreach (DataGridViewRow row in FvMenuDgv.Rows) // ← 追加
+            FvMenuDgv.ColumnHeadersHeight = 40;
+            FvMenuDgv.AllowUserToAddRows = false;
+            FvMenuDgv.RowHeadersVisible = false;
+            foreach (DataGridViewColumn col in FvMenuDgv.Columns)
+            {
+                col.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+            FvMenuDgv.RowTemplate.Height = 35;
+            foreach (DataGridViewRow row in FvMenuDgv.Rows)
             {
                 row.Height = 35;
             }
@@ -106,14 +114,20 @@ namespace teamH
             RkMenuDgv.Columns["順位"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             RkMenuDgv.Columns["お気に入り回数"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             RkMenuDgv.Columns["順位"].Width = 80;
-            RkMenuDgv.Columns["店名"].Width = 130;
-            RkMenuDgv.Columns["メニュー"].Width = 150;
-            RkMenuDgv.Columns["価格"].Width = 70;
+            RkMenuDgv.Columns["店名"].Width = 160;
+            RkMenuDgv.Columns["メニュー"].Width = 170;
+            RkMenuDgv.Columns["価格"].Width = 100;
             RkMenuDgv.Columns["お気に入り回数"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             RkMenuDgv.RowTemplate.Height = 35;
+            RkMenuDgv.ColumnHeadersHeight = 40;
             RkMenuDgv.AllowUserToAddRows = false;
             RkMenuDgv.RowHeadersVisible = false;
-            foreach (DataGridViewRow row in RkMenuDgv.Rows) // ← 追加
+            
+            foreach (DataGridViewColumn col in RkMenuDgv.Columns)
+            {
+                col.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+            foreach (DataGridViewRow row in RkMenuDgv.Rows) 
             {
                 row.Height = 35;
             }
@@ -154,9 +168,6 @@ namespace teamH
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
