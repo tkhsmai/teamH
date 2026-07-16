@@ -160,12 +160,11 @@ namespace teamH
                         Menu[i].Columns["menu_id"].Visible = false;
 
                         Menu[i].AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-                        Menu[i].Columns["menu_name"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                        Menu[i].Columns["price"].Width = 55;
-
+                        
 
                         Menu[i].Columns["menu_name"].HeaderText = "メニュー";
                         Menu[i].Columns["price"].HeaderText = "料金";
+                        
 
                         Menu[i].ClearSelection();
 
@@ -180,6 +179,9 @@ namespace teamH
                         MenuDgv1.CellClick += MenuDgv_CellClick;
                         MenuDgv2.CellClick += MenuDgv_CellClick;
                         MenuDgv3.CellClick += MenuDgv_CellClick;
+
+                        Menu[i].Columns["menu_name"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        Menu[i].Columns["price"].Width = 70;
 
                     }
 
@@ -324,10 +326,10 @@ namespace teamH
 
                     Menu[i].AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
                     Menu[i].Columns["menu_name"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    Menu[i].Columns["price"].Width = 55;
+                    Menu[i].Columns["price"].Width = 70;
 
                     Menu[i].Columns["menu_name"].HeaderText = "メニュー";
-                    Menu[i].Columns["price"].HeaderText = "料金";
+                    Menu[i].Columns["price"].HeaderText = "価格";
                     Menu[i].ClearSelection();
                 }
             }

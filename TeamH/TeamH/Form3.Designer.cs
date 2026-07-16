@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BHomeBtn2 = new System.Windows.Forms.Button();
             this.PassTbx = new System.Windows.Forms.TextBox();
             this.PassLbl = new System.Windows.Forms.Label();
@@ -52,11 +53,11 @@
             // BHomeBtn2
             // 
             this.BHomeBtn2.BackColor = System.Drawing.Color.OldLace;
-            this.BHomeBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BHomeBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BHomeBtn2.Location = new System.Drawing.Point(60, 59);
             this.BHomeBtn2.Margin = new System.Windows.Forms.Padding(2);
             this.BHomeBtn2.Name = "BHomeBtn2";
-            this.BHomeBtn2.Size = new System.Drawing.Size(124, 54);
+            this.BHomeBtn2.Size = new System.Drawing.Size(174, 73);
             this.BHomeBtn2.TabIndex = 0;
             this.BHomeBtn2.Text = "Home";
             this.BHomeBtn2.UseVisualStyleBackColor = false;
@@ -64,29 +65,29 @@
             // 
             // PassTbx
             // 
-            this.PassTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.PassTbx.Location = new System.Drawing.Point(335, 102);
+            this.PassTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PassTbx.Location = new System.Drawing.Point(336, 115);
             this.PassTbx.Name = "PassTbx";
-            this.PassTbx.Size = new System.Drawing.Size(280, 30);
+            this.PassTbx.Size = new System.Drawing.Size(280, 34);
             this.PassTbx.TabIndex = 9;
             // 
             // PassLbl
             // 
             this.PassLbl.AutoSize = true;
-            this.PassLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PassLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.PassLbl.Location = new System.Drawing.Point(331, 59);
             this.PassLbl.Name = "PassLbl";
-            this.PassLbl.Size = new System.Drawing.Size(318, 22);
+            this.PassLbl.Size = new System.Drawing.Size(404, 28);
             this.PassLbl.TabIndex = 10;
             this.PassLbl.Text = "パスワードを入力してください";
             // 
             // PassBtn
             // 
             this.PassBtn.BackColor = System.Drawing.Color.OldLace;
-            this.PassBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.PassBtn.Location = new System.Drawing.Point(660, 102);
+            this.PassBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PassBtn.Location = new System.Drawing.Point(660, 107);
             this.PassBtn.Name = "PassBtn";
-            this.PassBtn.Size = new System.Drawing.Size(63, 30);
+            this.PassBtn.Size = new System.Drawing.Size(63, 46);
             this.PassBtn.TabIndex = 16;
             this.PassBtn.Text = "OK";
             this.PassBtn.UseVisualStyleBackColor = false;
@@ -113,75 +114,77 @@
             this.AddGbx.Controls.Add(this.PriceLbl);
             this.AddGbx.Controls.Add(this.PriceAddTbx);
             this.AddGbx.Controls.Add(this.AddBtn);
-            this.AddGbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.AddGbx.Location = new System.Drawing.Point(90, 225);
+            this.AddGbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.AddGbx.Location = new System.Drawing.Point(84, 242);
             this.AddGbx.Name = "AddGbx";
-            this.AddGbx.Size = new System.Drawing.Size(465, 206);
+            this.AddGbx.Size = new System.Drawing.Size(579, 223);
             this.AddGbx.TabIndex = 19;
             this.AddGbx.TabStop = false;
             this.AddGbx.Text = "メニュー追加";
             // 
             // MenuAddTbx
             // 
-            this.MenuAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.MenuAddTbx.Location = new System.Drawing.Point(160, 51);
+            this.MenuAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MenuAddTbx.Location = new System.Drawing.Point(177, 66);
             this.MenuAddTbx.Name = "MenuAddTbx";
-            this.MenuAddTbx.Size = new System.Drawing.Size(175, 30);
+            this.MenuAddTbx.Size = new System.Drawing.Size(231, 34);
             this.MenuAddTbx.TabIndex = 18;
             // 
             // MenuLbl2
             // 
             this.MenuLbl2.AutoSize = true;
-            this.MenuLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.MenuLbl2.Location = new System.Drawing.Point(26, 57);
+            this.MenuLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MenuLbl2.Location = new System.Drawing.Point(25, 70);
             this.MenuLbl2.Name = "MenuLbl2";
-            this.MenuLbl2.Size = new System.Drawing.Size(106, 23);
+            this.MenuLbl2.Size = new System.Drawing.Size(133, 30);
             this.MenuLbl2.TabIndex = 17;
             this.MenuLbl2.Text = "メニュー";
             // 
             // PriceLbl
             // 
             this.PriceLbl.AutoSize = true;
-            this.PriceLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.PriceLbl.Location = new System.Drawing.Point(26, 142);
+            this.PriceLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PriceLbl.Location = new System.Drawing.Point(25, 141);
             this.PriceLbl.Name = "PriceLbl";
-            this.PriceLbl.Size = new System.Drawing.Size(58, 23);
+            this.PriceLbl.Size = new System.Drawing.Size(73, 30);
             this.PriceLbl.TabIndex = 16;
             this.PriceLbl.Text = "値段";
             // 
             // PriceAddTbx
             // 
-            this.PriceAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.PriceAddTbx.Location = new System.Drawing.Point(160, 141);
+            this.PriceAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PriceAddTbx.Location = new System.Drawing.Point(177, 141);
             this.PriceAddTbx.Name = "PriceAddTbx";
-            this.PriceAddTbx.Size = new System.Drawing.Size(137, 30);
+            this.PriceAddTbx.Size = new System.Drawing.Size(137, 34);
             this.PriceAddTbx.TabIndex = 14;
             // 
             // AddBtn
             // 
             this.AddBtn.BackColor = System.Drawing.Color.OldLace;
-            this.AddBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.AddBtn.Location = new System.Drawing.Point(342, 131);
+            this.AddBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.AddBtn.Location = new System.Drawing.Point(399, 133);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(97, 48);
+            this.AddBtn.Size = new System.Drawing.Size(97, 55);
             this.AddBtn.TabIndex = 12;
             this.AddBtn.Text = "追加";
             this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // SearchBtn2
             // 
             this.SearchBtn2.BackColor = System.Drawing.Color.OldLace;
-            this.SearchBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SearchBtn2.Location = new System.Drawing.Point(338, 96);
+            this.SearchBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SearchBtn2.Location = new System.Drawing.Point(458, 104);
             this.SearchBtn2.Name = "SearchBtn2";
-            this.SearchBtn2.Size = new System.Drawing.Size(98, 46);
+            this.SearchBtn2.Size = new System.Drawing.Size(98, 54);
             this.SearchBtn2.TabIndex = 19;
             this.SearchBtn2.Text = "検索";
             this.SearchBtn2.UseVisualStyleBackColor = false;
+            this.SearchBtn2.Click += new System.EventHandler(this.SearchBtn2_Click);
             // 
             // StoreCbx2
             // 
-            this.StoreCbx2.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreCbx2.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreCbx2.FormattingEnabled = true;
             this.StoreCbx2.Items.AddRange(new object[] {
             "スマイルバーガー号",
@@ -192,40 +195,51 @@
             "ソウルキッチン号"});
             this.StoreCbx2.Location = new System.Drawing.Point(217, 25);
             this.StoreCbx2.Name = "StoreCbx2";
-            this.StoreCbx2.Size = new System.Drawing.Size(219, 31);
+            this.StoreCbx2.Size = new System.Drawing.Size(339, 35);
             this.StoreCbx2.TabIndex = 19;
             // 
             // StoreLbl2
             // 
             this.StoreLbl2.AutoSize = true;
-            this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreLbl2.Location = new System.Drawing.Point(79, 30);
             this.StoreLbl2.Name = "StoreLbl2";
-            this.StoreLbl2.Size = new System.Drawing.Size(64, 25);
+            this.StoreLbl2.Size = new System.Drawing.Size(73, 30);
             this.StoreLbl2.TabIndex = 19;
             this.StoreLbl2.Text = "店名";
             // 
             // DeleteBtn
             // 
             this.DeleteBtn.BackColor = System.Drawing.Color.OldLace;
-            this.DeleteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.DeleteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.DeleteBtn.Location = new System.Drawing.Point(1068, 558);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(97, 51);
+            this.DeleteBtn.Size = new System.Drawing.Size(100, 61);
             this.DeleteBtn.TabIndex = 19;
             this.DeleteBtn.Text = "削除";
             this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // DeleteAddDgv
             // 
             this.DeleteAddDgv.AllowUserToAddRows = false;
-            this.DeleteAddDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DeleteAddDgv.Location = new System.Drawing.Point(708, 3);
+            this.DeleteAddDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DeleteAddDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DeleteAddDgv.ColumnHeadersHeight = 30;
+            this.DeleteAddDgv.GridColor = System.Drawing.Color.FloralWhite;
+            this.DeleteAddDgv.Location = new System.Drawing.Point(769, 0);
             this.DeleteAddDgv.Name = "DeleteAddDgv";
             this.DeleteAddDgv.RowHeadersVisible = false;
             this.DeleteAddDgv.RowHeadersWidth = 51;
             this.DeleteAddDgv.RowTemplate.Height = 24;
-            this.DeleteAddDgv.Size = new System.Drawing.Size(770, 462);
+            this.DeleteAddDgv.Size = new System.Drawing.Size(698, 462);
             this.DeleteAddDgv.TabIndex = 19;
             // 
             // Form3
