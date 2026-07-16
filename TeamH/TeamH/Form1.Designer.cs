@@ -53,7 +53,6 @@ namespace teamH
             this.MenuDgv2 = new System.Windows.Forms.DataGridView();
             this.MenuDgv3 = new System.Windows.Forms.DataGridView();
             this.FavoriteCntBtn = new System.Windows.Forms.Button();
-            this.TodayLbl = new System.Windows.Forms.Label();
             this.TitlePicture = new System.Windows.Forms.PictureBox();
             this.StorePicture3 = new System.Windows.Forms.PictureBox();
             this.StorePicture2 = new System.Windows.Forms.PictureBox();
@@ -72,39 +71,39 @@ namespace teamH
             // WeekLbl
             // 
             this.WeekLbl.AutoSize = true;
-            this.WeekLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.WeekLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.WeekLbl.ForeColor = System.Drawing.Color.SaddleBrown;
             this.WeekLbl.Location = new System.Drawing.Point(110, 231);
             this.WeekLbl.Name = "WeekLbl";
-            this.WeekLbl.Size = new System.Drawing.Size(64, 25);
+            this.WeekLbl.Size = new System.Drawing.Size(73, 30);
             this.WeekLbl.TabIndex = 1;
             this.WeekLbl.Text = "曜日";
             // 
             // StoreLbl
             // 
             this.StoreLbl.AutoSize = true;
-            this.StoreLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.StoreLbl.Location = new System.Drawing.Point(110, 295);
+            this.StoreLbl.Location = new System.Drawing.Point(110, 310);
             this.StoreLbl.Name = "StoreLbl";
-            this.StoreLbl.Size = new System.Drawing.Size(64, 25);
+            this.StoreLbl.Size = new System.Drawing.Size(73, 30);
             this.StoreLbl.TabIndex = 2;
             this.StoreLbl.Text = "店名";
             // 
             // MenuLbl
             // 
             this.MenuLbl.AutoSize = true;
-            this.MenuLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MenuLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.MenuLbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.MenuLbl.Location = new System.Drawing.Point(110, 355);
+            this.MenuLbl.Location = new System.Drawing.Point(110, 381);
             this.MenuLbl.Name = "MenuLbl";
-            this.MenuLbl.Size = new System.Drawing.Size(116, 25);
+            this.MenuLbl.Size = new System.Drawing.Size(133, 30);
             this.MenuLbl.TabIndex = 3;
             this.MenuLbl.Text = "メニュー";
             // 
             // WeekCbx
             // 
-            this.WeekCbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.WeekCbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.WeekCbx.FormattingEnabled = true;
             this.WeekCbx.Items.AddRange(new object[] {
             "月",
@@ -114,12 +113,12 @@ namespace teamH
             "金"});
             this.WeekCbx.Location = new System.Drawing.Point(270, 231);
             this.WeekCbx.Name = "WeekCbx";
-            this.WeekCbx.Size = new System.Drawing.Size(103, 28);
+            this.WeekCbx.Size = new System.Drawing.Size(103, 35);
             this.WeekCbx.TabIndex = 4;
             // 
             // StoreCbx
             // 
-            this.StoreCbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreCbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreCbx.FormattingEnabled = true;
             this.StoreCbx.Items.AddRange(new object[] {
             "スマイルバーガー号",
@@ -128,27 +127,27 @@ namespace teamH
             "クレープスマイル",
             "たこ丸キッチン",
             "ソウルキッチン号"});
-            this.StoreCbx.Location = new System.Drawing.Point(270, 292);
+            this.StoreCbx.Location = new System.Drawing.Point(270, 305);
             this.StoreCbx.Name = "StoreCbx";
-            this.StoreCbx.Size = new System.Drawing.Size(203, 28);
+            this.StoreCbx.Size = new System.Drawing.Size(203, 35);
             this.StoreCbx.TabIndex = 5;
             // 
             // MenuTbx
             // 
-            this.MenuTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.MenuTbx.Location = new System.Drawing.Point(270, 353);
+            this.MenuTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MenuTbx.Location = new System.Drawing.Point(270, 381);
             this.MenuTbx.Name = "MenuTbx";
-            this.MenuTbx.Size = new System.Drawing.Size(203, 27);
+            this.MenuTbx.Size = new System.Drawing.Size(203, 34);
             this.MenuTbx.TabIndex = 6;
             // 
             // SearchBtn
             // 
             this.SearchBtn.BackColor = System.Drawing.Color.OldLace;
-            this.SearchBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SearchBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.SearchBtn.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.SearchBtn.Location = new System.Drawing.Point(364, 410);
+            this.SearchBtn.Location = new System.Drawing.Point(364, 434);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(109, 47);
+            this.SearchBtn.Size = new System.Drawing.Size(96, 54);
             this.SearchBtn.TabIndex = 8;
             this.SearchBtn.Text = "検索";
             this.SearchBtn.UseVisualStyleBackColor = false;
@@ -157,12 +156,12 @@ namespace teamH
             // FavoriteBtn
             // 
             this.FavoriteBtn.BackColor = System.Drawing.Color.OldLace;
-            this.FavoriteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.FavoriteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FavoriteBtn.ForeColor = System.Drawing.Color.SaddleBrown;
             this.FavoriteBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FavoriteBtn.Location = new System.Drawing.Point(115, 549);
             this.FavoriteBtn.Name = "FavoriteBtn";
-            this.FavoriteBtn.Size = new System.Drawing.Size(345, 55);
+            this.FavoriteBtn.Size = new System.Drawing.Size(397, 55);
             this.FavoriteBtn.TabIndex = 10;
             this.FavoriteBtn.Text = "お気に入り・ランキング";
             this.FavoriteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,7 +172,7 @@ namespace teamH
             // 
             this.StoreLbl1.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreLbl1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.StoreLbl1.Location = new System.Drawing.Point(536, 318);
+            this.StoreLbl1.Location = new System.Drawing.Point(599, 316);
             this.StoreLbl1.Name = "StoreLbl1";
             this.StoreLbl1.Size = new System.Drawing.Size(370, 30);
             this.StoreLbl1.TabIndex = 11;
@@ -184,7 +183,7 @@ namespace teamH
             // 
             this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreLbl2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.StoreLbl2.Location = new System.Drawing.Point(988, 315);
+            this.StoreLbl2.Location = new System.Drawing.Point(1035, 316);
             this.StoreLbl2.Name = "StoreLbl2";
             this.StoreLbl2.Size = new System.Drawing.Size(370, 33);
             this.StoreLbl2.TabIndex = 12;
@@ -195,7 +194,7 @@ namespace teamH
             // 
             this.StoreLbl3.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreLbl3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.StoreLbl3.Location = new System.Drawing.Point(1440, 315);
+            this.StoreLbl3.Location = new System.Drawing.Point(1482, 315);
             this.StoreLbl3.Name = "StoreLbl3";
             this.StoreLbl3.Size = new System.Drawing.Size(363, 33);
             this.StoreLbl3.TabIndex = 13;
@@ -224,7 +223,7 @@ namespace teamH
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.MenuDgv1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.MenuDgv1.Location = new System.Drawing.Point(533, 614);
+            this.MenuDgv1.Location = new System.Drawing.Point(596, 614);
             this.MenuDgv1.Name = "MenuDgv1";
             this.MenuDgv1.RowHeadersVisible = false;
             this.MenuDgv1.RowHeadersWidth = 51;
@@ -254,7 +253,7 @@ namespace teamH
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.MenuDgv2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.MenuDgv2.Location = new System.Drawing.Point(993, 614);
+            this.MenuDgv2.Location = new System.Drawing.Point(1040, 614);
             this.MenuDgv2.Name = "MenuDgv2";
             this.MenuDgv2.RowHeadersVisible = false;
             this.MenuDgv2.RowHeadersWidth = 51;
@@ -284,7 +283,7 @@ namespace teamH
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.MenuDgv3.DefaultCellStyle = dataGridViewCellStyle6;
-            this.MenuDgv3.Location = new System.Drawing.Point(1445, 614);
+            this.MenuDgv3.Location = new System.Drawing.Point(1487, 614);
             this.MenuDgv3.Name = "MenuDgv3";
             this.MenuDgv3.RowHeadersVisible = false;
             this.MenuDgv3.RowHeadersWidth = 51;
@@ -295,32 +294,21 @@ namespace teamH
             // FavoriteCntBtn
             // 
             this.FavoriteCntBtn.BackColor = System.Drawing.Color.OldLace;
-            this.FavoriteCntBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.FavoriteCntBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FavoriteCntBtn.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.FavoriteCntBtn.Location = new System.Drawing.Point(1572, 894);
+            this.FavoriteCntBtn.Location = new System.Drawing.Point(1508, 894);
             this.FavoriteCntBtn.Name = "FavoriteCntBtn";
-            this.FavoriteCntBtn.Size = new System.Drawing.Size(259, 62);
+            this.FavoriteCntBtn.Size = new System.Drawing.Size(337, 62);
             this.FavoriteCntBtn.TabIndex = 21;
             this.FavoriteCntBtn.Text = "☆お気に入り追加";
             this.FavoriteCntBtn.UseVisualStyleBackColor = false;
             this.FavoriteCntBtn.Click += new System.EventHandler(this.FavoriteCntBtn_Click);
             // 
-            // TodayLbl
-            // 
-            this.TodayLbl.AutoSize = true;
-            this.TodayLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TodayLbl.ForeColor = System.Drawing.Color.LightCoral;
-            this.TodayLbl.Location = new System.Drawing.Point(955, 242);
-            this.TodayLbl.Name = "TodayLbl";
-            this.TodayLbl.Size = new System.Drawing.Size(422, 35);
-            this.TodayLbl.TabIndex = 22;
-            this.TodayLbl.Text = "＜～本日の出店店舗～＞";
-            // 
             // TitlePicture
             // 
             this.TitlePicture.BackColor = System.Drawing.Color.Transparent;
             this.TitlePicture.Image = global::teamH.Properties.Resources.kichinavi_logo_textonly;
-            this.TitlePicture.Location = new System.Drawing.Point(755, -114);
+            this.TitlePicture.Location = new System.Drawing.Point(703, -112);
             this.TitlePicture.Name = "TitlePicture";
             this.TitlePicture.Size = new System.Drawing.Size(804, 424);
             this.TitlePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -329,7 +317,7 @@ namespace teamH
             // 
             // StorePicture3
             // 
-            this.StorePicture3.Location = new System.Drawing.Point(1445, 365);
+            this.StorePicture3.Location = new System.Drawing.Point(1487, 365);
             this.StorePicture3.Name = "StorePicture3";
             this.StorePicture3.Size = new System.Drawing.Size(358, 224);
             this.StorePicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -338,7 +326,7 @@ namespace teamH
             // 
             // StorePicture2
             // 
-            this.StorePicture2.Location = new System.Drawing.Point(993, 365);
+            this.StorePicture2.Location = new System.Drawing.Point(1040, 365);
             this.StorePicture2.Name = "StorePicture2";
             this.StorePicture2.Size = new System.Drawing.Size(365, 224);
             this.StorePicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,7 +335,7 @@ namespace teamH
             // 
             // StorePicture1
             // 
-            this.StorePicture1.Location = new System.Drawing.Point(536, 367);
+            this.StorePicture1.Location = new System.Drawing.Point(599, 367);
             this.StorePicture1.Name = "StorePicture1";
             this.StorePicture1.Size = new System.Drawing.Size(370, 222);
             this.StorePicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -357,18 +345,18 @@ namespace teamH
             // HomeLbl
             // 
             this.HomeLbl.AutoSize = true;
-            this.HomeLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.HomeLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.HomeLbl.ForeColor = System.Drawing.Color.SaddleBrown;
             this.HomeLbl.Location = new System.Drawing.Point(48, 70);
             this.HomeLbl.Name = "HomeLbl";
-            this.HomeLbl.Size = new System.Drawing.Size(111, 43);
+            this.HomeLbl.Size = new System.Drawing.Size(126, 50);
             this.HomeLbl.TabIndex = 24;
             this.HomeLbl.Text = "Home";
             // 
             // ManagerBtn
             // 
             this.ManagerBtn.BackColor = System.Drawing.Color.OldLace;
-            this.ManagerBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ManagerBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.ManagerBtn.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ManagerBtn.Location = new System.Drawing.Point(115, 741);
             this.ManagerBtn.Name = "ManagerBtn";
@@ -384,11 +372,10 @@ namespace teamH
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1803, 1031);
+            this.ClientSize = new System.Drawing.Size(1924, 1031);
             this.Controls.Add(this.ManagerBtn);
             this.Controls.Add(this.HomeLbl);
             this.Controls.Add(this.TitlePicture);
-            this.Controls.Add(this.TodayLbl);
             this.Controls.Add(this.FavoriteCntBtn);
             this.Controls.Add(this.MenuDgv3);
             this.Controls.Add(this.MenuDgv2);
@@ -442,7 +429,6 @@ namespace teamH
         private System.Windows.Forms.DataGridView MenuDgv2;
         private System.Windows.Forms.DataGridView MenuDgv3;
         private System.Windows.Forms.Button FavoriteCntBtn;
-        private System.Windows.Forms.Label TodayLbl;
         private System.Windows.Forms.PictureBox TitlePicture;
         private System.Windows.Forms.Label HomeLbl;
         private Button ManagerBtn;
