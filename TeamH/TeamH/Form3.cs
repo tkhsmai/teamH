@@ -25,6 +25,8 @@ namespace teamH
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            DeleteAddDgv.ReadOnly = true;
+            
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["teamH"].ConnectionString))
 
             {
@@ -195,7 +197,7 @@ namespace teamH
             string inputPassword = PassTbx.Text;
 
             // 正しいパスワード（あなたが決める）
-            string correctPassword = "1234";
+            string correctPassword = "teamH";
 
             if (inputPassword == correctPassword)
             {
@@ -212,6 +214,7 @@ namespace teamH
             }
         }
 
+        
     }
 }
 
