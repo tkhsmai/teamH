@@ -82,7 +82,6 @@ namespace teamH
             }
 
             // ===== 左DGV スタイル =====
-            FvMenuDgv.DefaultCellStyle.Font = new Font("MS UI Gothic", 12);
             FvMenuDgv.DefaultCellStyle.ForeColor = Color.Black;
             FvMenuDgv.DefaultCellStyle.SelectionBackColor = Color.White;
             FvMenuDgv.DefaultCellStyle.SelectionForeColor = Color.Black;
@@ -107,16 +106,15 @@ namespace teamH
 
 
             // ===== 右DGV スタイル =====
-            RkMenuDgv.DefaultCellStyle.Font = new Font("MS UI Gothic", 12);
             RkMenuDgv.DefaultCellStyle.ForeColor = Color.Black;
             RkMenuDgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(220, 220, 220);
             RkMenuDgv.DefaultCellStyle.SelectionForeColor = Color.Black;
             RkMenuDgv.Columns["順位"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             RkMenuDgv.Columns["お気に入り回数"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            RkMenuDgv.Columns["順位"].Width = 80;
-            RkMenuDgv.Columns["店名"].Width = 160;
-            RkMenuDgv.Columns["メニュー"].Width = 170;
-            RkMenuDgv.Columns["価格"].Width = 100;
+            RkMenuDgv.Columns["順位"].Width = 62;
+            RkMenuDgv.Columns["店名"].Width = 190;
+            RkMenuDgv.Columns["メニュー"].Width = 250;
+            RkMenuDgv.Columns["価格"].Width = 62;
             RkMenuDgv.Columns["お気に入り回数"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             RkMenuDgv.RowTemplate.Height = 35;
             RkMenuDgv.ColumnHeadersHeight = 40;

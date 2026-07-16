@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BHomeBtn2 = new System.Windows.Forms.Button();
             this.PassTbx = new System.Windows.Forms.TextBox();
             this.PassLbl = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             // 
             this.BHomeBtn2.BackColor = System.Drawing.Color.OldLace;
             this.BHomeBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BHomeBtn2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.BHomeBtn2.Location = new System.Drawing.Point(60, 59);
             this.BHomeBtn2.Margin = new System.Windows.Forms.Padding(2);
             this.BHomeBtn2.Name = "BHomeBtn2";
@@ -75,19 +77,21 @@
             // 
             this.PassLbl.AutoSize = true;
             this.PassLbl.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PassLbl.ForeColor = System.Drawing.Color.SaddleBrown;
             this.PassLbl.Location = new System.Drawing.Point(331, 59);
             this.PassLbl.Name = "PassLbl";
-            this.PassLbl.Size = new System.Drawing.Size(404, 28);
+            this.PassLbl.Size = new System.Drawing.Size(432, 28);
             this.PassLbl.TabIndex = 10;
-            this.PassLbl.Text = "パスワードを入力してください";
+            this.PassLbl.Text = "※パスワードを入力してください";
             // 
             // PassBtn
             // 
             this.PassBtn.BackColor = System.Drawing.Color.OldLace;
             this.PassBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.PassBtn.ForeColor = System.Drawing.Color.SaddleBrown;
             this.PassBtn.Location = new System.Drawing.Point(660, 107);
             this.PassBtn.Name = "PassBtn";
-            this.PassBtn.Size = new System.Drawing.Size(63, 46);
+            this.PassBtn.Size = new System.Drawing.Size(85, 42);
             this.PassBtn.TabIndex = 16;
             this.PassBtn.Text = "OK";
             this.PassBtn.UseVisualStyleBackColor = false;
@@ -102,7 +106,7 @@
             this.ManagerPanel.Controls.Add(this.DeleteBtn);
             this.ManagerPanel.Controls.Add(this.DeleteAddDgv);
             this.ManagerPanel.Location = new System.Drawing.Point(60, 206);
-            this.ManagerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ManagerPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ManagerPanel.Name = "ManagerPanel";
             this.ManagerPanel.Size = new System.Drawing.Size(1481, 668);
             this.ManagerPanel.TabIndex = 18;
@@ -115,9 +119,10 @@
             this.AddGbx.Controls.Add(this.PriceAddTbx);
             this.AddGbx.Controls.Add(this.AddBtn);
             this.AddGbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.AddGbx.ForeColor = System.Drawing.Color.SaddleBrown;
             this.AddGbx.Location = new System.Drawing.Point(84, 242);
             this.AddGbx.Name = "AddGbx";
-            this.AddGbx.Size = new System.Drawing.Size(579, 223);
+            this.AddGbx.Size = new System.Drawing.Size(601, 251);
             this.AddGbx.TabIndex = 19;
             this.AddGbx.TabStop = false;
             this.AddGbx.Text = "メニュー追加";
@@ -125,7 +130,7 @@
             // MenuAddTbx
             // 
             this.MenuAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.MenuAddTbx.Location = new System.Drawing.Point(177, 66);
+            this.MenuAddTbx.Location = new System.Drawing.Point(211, 70);
             this.MenuAddTbx.Name = "MenuAddTbx";
             this.MenuAddTbx.Size = new System.Drawing.Size(231, 34);
             this.MenuAddTbx.TabIndex = 18;
@@ -136,9 +141,9 @@
             this.MenuLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.MenuLbl2.Location = new System.Drawing.Point(25, 70);
             this.MenuLbl2.Name = "MenuLbl2";
-            this.MenuLbl2.Size = new System.Drawing.Size(133, 30);
+            this.MenuLbl2.Size = new System.Drawing.Size(163, 30);
             this.MenuLbl2.TabIndex = 17;
-            this.MenuLbl2.Text = "メニュー";
+            this.MenuLbl2.Text = "メニュー名";
             // 
             // PriceLbl
             // 
@@ -153,7 +158,7 @@
             // PriceAddTbx
             // 
             this.PriceAddTbx.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.PriceAddTbx.Location = new System.Drawing.Point(177, 141);
+            this.PriceAddTbx.Location = new System.Drawing.Point(211, 141);
             this.PriceAddTbx.Name = "PriceAddTbx";
             this.PriceAddTbx.Size = new System.Drawing.Size(137, 34);
             this.PriceAddTbx.TabIndex = 14;
@@ -162,7 +167,7 @@
             // 
             this.AddBtn.BackColor = System.Drawing.Color.OldLace;
             this.AddBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.AddBtn.Location = new System.Drawing.Point(399, 133);
+            this.AddBtn.Location = new System.Drawing.Point(446, 165);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(97, 55);
             this.AddBtn.TabIndex = 12;
@@ -174,6 +179,7 @@
             // 
             this.SearchBtn2.BackColor = System.Drawing.Color.OldLace;
             this.SearchBtn2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SearchBtn2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.SearchBtn2.Location = new System.Drawing.Point(458, 104);
             this.SearchBtn2.Name = "SearchBtn2";
             this.SearchBtn2.Size = new System.Drawing.Size(98, 54);
@@ -202,6 +208,7 @@
             // 
             this.StoreLbl2.AutoSize = true;
             this.StoreLbl2.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.StoreLbl2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.StoreLbl2.Location = new System.Drawing.Point(79, 30);
             this.StoreLbl2.Name = "StoreLbl2";
             this.StoreLbl2.Size = new System.Drawing.Size(73, 30);
@@ -212,6 +219,7 @@
             // 
             this.DeleteBtn.BackColor = System.Drawing.Color.OldLace;
             this.DeleteBtn.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.DeleteBtn.ForeColor = System.Drawing.Color.SaddleBrown;
             this.DeleteBtn.Location = new System.Drawing.Point(1068, 558);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(100, 61);
@@ -224,21 +232,29 @@
             // 
             this.DeleteAddDgv.AllowUserToAddRows = false;
             this.DeleteAddDgv.BackgroundColor = System.Drawing.Color.FloralWhite;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DeleteAddDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DeleteAddDgv.ColumnHeadersHeight = 30;
-            this.DeleteAddDgv.GridColor = System.Drawing.Color.FloralWhite;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("ＭＳ ゴシック", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DeleteAddDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DeleteAddDgv.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("ＭＳ ゴシック", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DeleteAddDgv.DefaultCellStyle = dataGridViewCellStyle4;
+            this.DeleteAddDgv.GridColor = System.Drawing.SystemColors.ButtonShadow;
             this.DeleteAddDgv.Location = new System.Drawing.Point(769, 0);
             this.DeleteAddDgv.Name = "DeleteAddDgv";
             this.DeleteAddDgv.RowHeadersVisible = false;
             this.DeleteAddDgv.RowHeadersWidth = 51;
-            this.DeleteAddDgv.RowTemplate.Height = 24;
+            this.DeleteAddDgv.RowTemplate.Height = 30;
             this.DeleteAddDgv.Size = new System.Drawing.Size(698, 462);
             this.DeleteAddDgv.TabIndex = 19;
             // 
@@ -253,7 +269,6 @@
             this.Controls.Add(this.PassTbx);
             this.Controls.Add(this.BHomeBtn2);
             this.Controls.Add(this.ManagerPanel);
-            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3";
             this.Text = "Form3";

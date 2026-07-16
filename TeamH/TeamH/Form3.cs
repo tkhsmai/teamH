@@ -48,19 +48,23 @@ namespace teamH
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
+
                 StoreCbx2.DataSource = dt;
                 StoreCbx2.DisplayMember = "store_name";
                 StoreCbx2.ValueMember = "store_id";
+
+                StoreCbx2.SelectedIndex = -1;
             }
             StoreCbx2.DisplayMember = "store_name";
             StoreCbx2.ValueMember = "store_id";
+            
 
         }
         // 店舗を選んだらメニュー一覧を表示
-        //private void StoreCbx2_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    LoadMenuList();
-        //}
+        private void StoreCbx2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadMenuList();
+        }
 
         // メニュー一覧を読み込む共通メソッド
         private void LoadMenuList()
@@ -93,11 +97,19 @@ namespace teamH
                 da.Fill(dt);
 
                 DeleteAddDgv.DataSource = dt;
+                
+
+                DeleteAddDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+                DeleteAddDgv.Columns["メニュー名"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                DeleteAddDgv.Columns["価格"].Width = 130;
 
                 if (DeleteAddDgv.Columns.Contains("menu_id"))
                 {
                     DeleteAddDgv.Columns["menu_id"].Visible = false;
                 }
+
+                
+
             }
         }
 
@@ -254,6 +266,9 @@ namespace teamH
                 {
                     DeleteAddDgv.Columns["menu_id"].Visible = false;
                 }
+                DeleteAddDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+                DeleteAddDgv.Columns["メニュー名"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                DeleteAddDgv.Columns["価格"].Width = 130;
             }
         }
     }

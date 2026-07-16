@@ -266,6 +266,10 @@ namespace teamH
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(storeDt);
 
+
+
+
+
                 if (storeDt.Rows.Count == 0)
                 {
                     MessageBox.Show("検索結果がありません。");
