@@ -163,7 +163,7 @@ namespace teamH
                         
 
                         Menu[i].Columns["menu_name"].HeaderText = "メニュー";
-                        Menu[i].Columns["price"].HeaderText = "料金";
+                        Menu[i].Columns["price"].HeaderText = "価格";
                         
 
                         Menu[i].ClearSelection();
@@ -419,5 +419,6 @@ namespace teamH
             form3.Show();
             this.Hide();
         }
+
     }
 }

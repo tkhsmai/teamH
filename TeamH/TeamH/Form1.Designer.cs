@@ -194,7 +194,7 @@ namespace teamH
             // 
             this.StoreLbl3.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.StoreLbl3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.StoreLbl3.Location = new System.Drawing.Point(1503, 252);
+            this.StoreLbl3.Location = new System.Drawing.Point(1549, 255);
             this.StoreLbl3.Name = "StoreLbl3";
             this.StoreLbl3.Size = new System.Drawing.Size(363, 33);
             this.StoreLbl3.TabIndex = 13;
@@ -372,7 +372,7 @@ namespace teamH
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1924, 1031);
+            this.ClientSize = new System.Drawing.Size(1924, 1052);
             this.Controls.Add(this.ManagerBtn);
             this.Controls.Add(this.HomeLbl);
             this.Controls.Add(this.FavoriteCntBtn);
